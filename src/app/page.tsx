@@ -40,7 +40,18 @@ export default function Home() {
           </button>
         </div>
         <div className="right">
-          <p>droite</p>
+          <div className="w-1 bg-gray-300 h-[550px]"></div>
+          {/* Cercles */}
+          <div className="absolute flex flex-col justify-between h-[550px]">
+            <div className="w-5 h-5 bg-[#FF495D] rounded-full border-2 border-[#FF495D]"></div>{" "}
+            {/* Haut */}
+            <div className="w-5 h-5 bg-[#292B43] rounded-full border-2 border-[#FF495D]"></div>{" "}
+            {/* Milieu haut */}
+            <div className="w-5 h-5 bg-[#292B43] rounded-full border-2 border-[#FF495D]"></div>{" "}
+            {/* Milieu bas */}
+            <div className="w-5 h-5 bg-[#292B43] rounded-full border-2 border-[#FF495D]"></div>{" "}
+            {/* Bas */}
+          </div>
         </div>
       </main>
     </div>
