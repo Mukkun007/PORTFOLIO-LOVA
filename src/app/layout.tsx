@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Inter, Racing_Sans_One } from "next/font/google";
+
+// Importation des polices via next/font
+const inter = Inter({
+  weight: ["100", "300", "400", "600", "900"], // Choisir les poids souhaités
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const racingSansOne = Racing_Sans_One({
+  weight: ["400"], // Choisir les poids souhaités
+  subsets: ["latin"],
+  variable: "--font-racing-sans-one",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
