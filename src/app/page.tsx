@@ -11,7 +11,7 @@ export default function Home() {
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#deux">About</a>
           </li>
           <li>
             <a href="#">Services</a>
@@ -35,14 +35,14 @@ export default function Home() {
             <br />
             spécimen de polices de texte.
           </h3>
-          <button className="px-6 py-3 bg-[#FF495D] w-72 h-14 text-white font-semibold rounded-lg shadow-md hover:bg-[#292B43] hover:text-[#FF495D] transition mt-10 ml-44 text-[#292B43]">
+          <button className="px-6 py-3 bg-[#FF495D] w-72 h-14 font-semibold rounded-lg shadow-md hover:bg-[#292B43] hover:text-[#FF495D] transition mt-10 ml-[320px] text-[#292B43]">
             Cliquez-moi
           </button>
         </div>
         <div className="right">
-          <div className="w-1 bg-gray-300 h-[550px]"></div>
+          <div className="w-1 bg-gray-300 h-[550px] mr-[320px]"></div>
           {/* Cercles */}
-          <div className="absolute flex flex-col justify-between h-[550px]">
+          <div className="absolute flex flex-col justify-between h-[550px] mr-[320px]">
             <div className="w-5 h-5 bg-[#FF495D] rounded-full border-2 border-[#FF495D]"></div>{" "}
             {/* Haut */}
             <div className="w-5 h-5 bg-[#292B43] rounded-full border-2 border-[#FF495D]"></div>{" "}
@@ -54,6 +54,26 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      <section className="menu-deux" id="deux">
+        <div className="menu-deux-left">
+          <h1>Menu-Deux</h1>
+        </div>
+        <div className="menu-deux-right">
+          <div className="w-1 bg-gray-300 h-[550px] mr-[320px]"></div>
+          {/* Cercles */}
+          <div className="absolute flex flex-col justify-between h-[550px] mr-[320px]">
+            <div className="w-5 h-5 bg-[#292B43] rounded-full border-2 border-[#FF495D]"></div>{" "}
+            {/* Haut */}
+            <div className="w-5 h-5 bg-[#FF495D] rounded-full border-2 border-[#FF495D]"></div>{" "}
+            {/* Milieu haut */}
+            <div className="w-5 h-5 bg-[#292B43] rounded-full border-2 border-[#FF495D]"></div>{" "}
+            {/* Milieu bas */}
+            <div className="w-5 h-5 bg-[#292B43] rounded-full border-2 border-[#FF495D]"></div>{" "}
+            {/* Bas */}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
