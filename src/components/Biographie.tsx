@@ -30,7 +30,7 @@ const Biographie = () => {
               {/* Instagram */}
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/fitahiana-lova-andrianomenjanahary-676509273/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -38,7 +38,7 @@ const Biographie = () => {
               {/* LinkedIn */}
             </a>
             <a
-              href="https://wa.me/your-phone-number"
+              href="https://wa.me/+261344806190"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -46,7 +46,7 @@ const Biographie = () => {
               {/* WhatsApp */}
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/Mukkun007"
               target="_blank"
               rel="noopener noreferrer"
             >

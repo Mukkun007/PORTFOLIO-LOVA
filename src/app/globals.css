@@ -44,9 +44,9 @@ nav .logo h1 {
   font-weight: lighter;
 }
 
-span {
+/* span {
   color: #ff495d;
-}
+} */
 
 nav ul {
   display: flex;
@@ -121,7 +121,7 @@ main {
 }
 
 .desc h1 {
-  font-size: 45px;
+  font-size: 40px;
   margin-left: 220px;
   margin-right: 180px;
   margin-top: 10px;

@@ -3,7 +3,7 @@ const Header = () => {
     <nav className="flex justify-between items-center p-4">
       <div className="logo">
         <h1 className="text-4xl font-semibold">
-          Lova <span className="text-accent">.</span>
+          Lova <span className="text-[#ff495d]">.</span>
         </h1>
       </div>
       <ul className="flex space-x-6">
