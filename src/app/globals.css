@@ -20,7 +20,7 @@ html {
 
 nav {
   margin: 0;
-  background-color: #2f334a;
+  background-color: #292b43;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between; /* Ajoute de l'espace entre les blocs */
@@ -31,17 +31,20 @@ nav {
 }
 
 nav .logo {
-  color: #fff;
-  font-size: 55px;
-  font-weight: bold;
   letter-spacing: 2px;
   flex-basis: 50%; /* Prend 50% de l'espace */
   flex-grow: 1; /* Permet au logo de grandir selon l'espace disponible */
   text-align: left;
-  margin-left: 300px;
+  margin-left: 200px;
 }
 
-nav .logo span {
+nav .logo h1 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: lighter;
+}
+
+span {
   color: #ff495d;
 }
 
@@ -52,7 +55,7 @@ nav ul {
   margin: 0;
   flex-basis: 50%; /* Prend 50% de l'espace */
   justify-content: flex-end;
-  margin-right: 300px;
+  margin-right: 200px;
   margin-top: 5px;
   gap: 40px;
 }
@@ -64,9 +67,10 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 25px;
   transition: color 0.3s ease;
+  margin-bottom: 5px;
 }
 
 nav ul li a:hover {
@@ -97,52 +101,36 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column; /* Permet de placer le navbar en haut et le contenu en dessous */
-  height: 100vh;
+  height: 30vh;
 }
 
 main {
   display: flex; /* Flexbox pour diviser le contenu en 2 */
   flex: 1;
   height: calc(
-    100vh - 60px
+    45vh - 60px
   ); /* S'assure que le contenu occupe toute la hauteur restante après le navbar */
 }
 
-.left {
-  flex: 0 0 80%; /* 80% de la largeur pour la section de gauche */
+.desc {
+  flex: 0 0 100%; /* 80% de la largeur pour la section de gauche */
   background: var(--background);
   display: block;
   justify-content: start;
   align-items: start;
 }
 
-.left h1 {
-  font-size: 100px;
-  margin-left: 320px;
-  margin-top: 150px;
-  font-weight: lighter;
-  font-family: var(--font-inter), sans-serif;
-}
-
-.left h2 {
-  font-size: 70px;
-  margin-left: 320px;
+.desc h1 {
+  font-size: 45px;
+  margin-left: 220px;
+  margin-right: 180px;
   margin-top: 10px;
   font-weight: lighter;
   font-family: var(--font-inter), sans-serif;
-}
-
-.left h3 {
-  font-size: 33px;
-  margin-left: 320px;
-  margin-top: 10px;
-  font-weight: lighter;
-  font-family: var(--font-inter), sans-serif;
-  color: #535c69;
 }
 
 .right {
-  flex: 0 0 20%; /* 20% de la largeur pour la section de droite */
+  flex: 0 0 40%; /* 20% de la largeur pour la section de droite */
   background: var(--background);
   display: flex;
   justify-content: center;

@@ -1,0 +1,63 @@
+const Biographie = () => {
+  return (
+    <>
+      <div className="biographie flex flex-wrap ml-[220px] mr-[220px] mt-10">
+        <div className="w-full md:w-1/5 p-4 flex justify-center items-center">
+          <div className="w-[10rem] h-[10rem] border-4 border-[#00bcd4] rounded-full"></div>
+        </div>
+        <div className="w-full md:w-3/5 p-4">
+          <h2 className="font-bold text-3xl">Biographie</h2>
+          <h3 className="mt-5 text-xl leading-relaxed mr-10">
+            Experienced with
+            <span className="font-bold text-[#00bcd4]"> Symfony</span> in my
+            first professional year, currently focused on{" "}
+            <span className="font-bold text-[#ff495d]">UX/UI</span> design and
+            passionate about creating user-friendly experiences while exploring
+            new technologies like{" "}
+            <span className="font-bold text-[#ff495d]"> React</span> and{" "}
+            <span className="font-bold text-[#00bcd4]"> Agile</span>.
+          </h3>
+        </div>
+        <div className="w-full md:w-1/5 p-4">
+          <h2 className="font-bold text-3xl">Lets Connect</h2>
+          <div className="reseaux flex space-x-4 mt-5">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-instagram text-4xl text-white"></i>{" "}
+              {/* Instagram */}
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-linkedin text-4xl text-white"></i>{" "}
+              {/* LinkedIn */}
+            </a>
+            <a
+              href="https://wa.me/your-phone-number"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-whatsapp text-4xl text-white"></i>{" "}
+              {/* WhatsApp */}
+            </a>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-github text-4xl text-white"></i>{" "}
+              {/* GitHub */}
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Biographie;
