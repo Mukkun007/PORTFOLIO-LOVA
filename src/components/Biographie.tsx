@@ -1,17 +1,17 @@
 const Biographie = () => {
   return (
     <>
-      <div className="biographie flex flex-wrap ml-[220px] mr-[220px] mt-10">
+      <div className="biographie flex flex-wrap ml-[140px] mr-[220px] mt-[10px]">
         <div className="w-full md:w-1/5 p-4 flex justify-center items-center">
           <div className="w-[10rem] h-[10rem] border-4 border-[#00bcd4] rounded-full"></div>
         </div>
         <div className="w-full md:w-3/5 p-4">
           <h2 className="font-bold text-3xl">Biographie</h2>
-          <h3 className="mt-5 text-xl leading-relaxed mr-10">
+          <h3 className="mt-5 text-xl leading-relaxed mr-[50px]">
             Experienced with
             <span className="font-bold text-[#00bcd4]"> Symfony</span> in my
             first professional year, currently focused on{" "}
-            <span className="font-bold text-[#ff495d]">UX/UI</span> design and
+            <span className="font-bold text-[#ff495d]">UX/UI design</span> and
             passionate about creating user-friendly experiences while exploring
             new technologies like{" "}
             <span className="font-bold text-[#ff495d]"> React</span> and{" "}

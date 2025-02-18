@@ -121,9 +121,9 @@ main {
 }
 
 .desc h1 {
-  font-size: 40px;
+  font-size: 65px;
   margin-left: 220px;
-  margin-right: 180px;
+  margin-right: 250px;
   margin-top: 10px;
   font-weight: lighter;
   font-family: var(--font-inter), sans-serif;
