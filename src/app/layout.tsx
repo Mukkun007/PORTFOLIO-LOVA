@@ -52,9 +52,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <div className="scroll-to-top">
+        {/* <div className="scroll-to-top">
           <i className="fa-solid fa-globe"></i>
-        </div>
+        </div> */}
       </body>
     </html>
   );
