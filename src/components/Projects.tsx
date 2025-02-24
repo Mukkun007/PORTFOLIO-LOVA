@@ -13,9 +13,9 @@ const Projects = () => {
         "Migrated the intranet platform from Symfony 3.4 to 6.4, modernizing the codebase for better performance, security, and maintainability. The upgrade involved refactoring legacy code, optimizing database queries, and ensuring full compatibility with the latest Symfony features, all while minimizing disruptions for users.",
     },
     {
-      image: "/images/image2.jpg",
-      title: "Mobile Development",
-      establishment: "Tech Innovations",
+      image: "/images/DOR.png",
+      title: "Web Development",
+      establishment: "Banky Foiben’ny Madagasikara",
       projectName: "Mobile App Development",
       description:
         "Developed a cross-platform mobile app for e-commerce, enhancing the shopping experience with a user-friendly interface and optimized performance for both Android and iOS devices.",
@@ -46,9 +46,10 @@ const Projects = () => {
             {/* Détails du projet à droite */}
             <div className="w-1/2 pl-4">
               <h2 className="text-xl font-light">{project.title}</h2>
-              <h1 className="text-4xl font-bold mt-3">
-                {project.establishment} {project.projectName}
-              </h1>
+              <h1 className="text-4xl font-bold mt-3">{project.projectName}</h1>
+              <h2 className="text-[-20px] font-light mt-3">
+                {project.establishment}
+              </h2>
               <p className="mt-8">{project.description}</p>
             </div>
           </div>
