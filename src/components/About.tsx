@@ -18,18 +18,6 @@ const About = () => {
         "Concevoir des projets alliant créativité et fonctionnalité pour une expérience utilisateur optimale.",
       icon: "fa-diagram-project",
     },
-    {
-      title: "UI/UX Design",
-      description:
-        "Créer des interfaces modernes et intuitives pour une expérience utilisateur fluide.",
-      icon: "fa-paint-brush",
-    },
-    {
-      title: "UI/UX Design",
-      description:
-        "Créer des interfaces modernes et intuitives pour une expérience utilisateur fluide.",
-      icon: "fa-paint-brush",
-    },
   ];
 
   return (
@@ -63,15 +51,15 @@ const About = () => {
               {cards.map((card, index) => (
                 <SwiperSlide
                   key={index}
-                  className="bg-[#434451] rounded-lg shadow-md p-6 w-[240px] flex-shrink-0"
+                  className="bg-[#434451] rounded-lg shadow-md p-6 w-[240px] flex-shrink-0 relative"
                 >
-                  <div className="flex justify-center">
+                  <div className="absolute top-[-20px] left-1/2 transform -translate-x-1/2">
                     <div className="bg-[#292b43] text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg border-2 border-white border-opacity-50">
                       <i className={`fa-solid ${card.icon} text-lg`}></i>
                     </div>
                   </div>
 
-                  <h3 className="text-xl font-bold text-white text-center mt-2">
+                  <h3 className="text-xl font-bold text-white text-center mt-8">
                     {card.title}
                   </h3>
                   <p className="mt-2 text-white text-center">
@@ -87,15 +75,16 @@ const About = () => {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="flex-1 bg-[#434451] rounded-lg shadow-md p-6"
+                className="flex-1 bg-[#434451] rounded-lg shadow-md p-6 relative"
               >
-                <div className="flex justify-center mb-2">
+                {/* Icône positionnée en absolute et centrée */}
+                <div className="absolute top-[-20px] left-1/2 transform -translate-x-1/2">
                   <div className="bg-[#292b43] text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg border-2 border-white border-opacity-50">
                     <i className={`fa-solid ${card.icon} text-lg`}></i>
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-white text-center">
+                <h3 className="text-xl font-bold text-white text-center mt-8">
                   {card.title}
                 </h3>
                 <p className="mt-2 text-white text-center">
