@@ -1,7 +1,7 @@
 const Biographie = () => {
   return (
     <>
-      <div className="biographie flex flex-wrap ml-[140px] mr-[220px] mt-[10px]">
+      <div className="biographie flex flex-wrap ml-[140px] mr-[220px] mt-10">
         <div className="w-full md:w-1/5 p-4 flex justify-center items-center">
           <div className="w-[10rem] h-[10rem] border-4 border-[#00bcd4] rounded-full"></div>
         </div>

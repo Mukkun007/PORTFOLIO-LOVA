@@ -28,7 +28,7 @@ const Projects = () => {
   const displayedProjects = showAll ? projects : projects.slice(0, 2);
 
   return (
-    <div className="project mt-[50px]">
+    <div className="project mt-10">
       <h1 className="font-bold text-4xl text-white ml-[210px]">Notable Work</h1>
 
       <div className="flex flex-wrap ml-[210px] mr-[220px] mt-[10px] gap-8">
