@@ -35,7 +35,7 @@ const About = () => {
   return (
     <div className="skills flex flex-wrap ml-[200px] mr-[220px] mt-[50px]">
       {/* Partie de gauche */}
-      <div className="w-full md:w-1/2 p-4">
+      <div className="w-full md:w-1/2 p-4 mt-10">
         <h2 className="font-bold text-3xl">What I do</h2>
         <h3 className="text-xl leading-relaxed">
           Design and develop web applications, both{" "}
