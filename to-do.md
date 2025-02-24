@@ -3,7 +3,7 @@ Description principales ✅
 Biographie ✅
 Lets Connect ✅
 WHat i do ✅
-Experiences
+Work Experiences
 Education Cert
 Skill cards
 Notable Work

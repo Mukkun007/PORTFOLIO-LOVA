@@ -8,11 +8,21 @@ import "swiper/css/pagination";
 
 const About = () => {
   const cards = [
-    { title: "Card 1", description: "Description of Card 1" },
-    { title: "Card 2", description: "Description of Card 2" },
-    { title: "Card 3", description: "Description of Card 3" },
-    { title: "Card 4", description: "Description of Card 4" },
-    { title: "Card 5", description: "Description of Card 5" },
+    {
+      title: "Web Development",
+      description:
+        "Développer des applications web performantes et évolutives en optimisant le code.",
+      icon: "fa-code",
+    },
+    {
+      title: "Project Design",
+      description:
+        "Concevoir des projets alliant créativité et fonctionnalité pour une expérience utilisateur optimale.",
+      icon: "fa-diagram-project",
+    },
+    { title: "Card 3", description: "Description of Card 3", icon: "fa-code" },
+    { title: "Card 4", description: "Description of Card 4", icon: "fa-code" },
+    { title: "Card 5", description: "Description of Card 5", icon: "fa-code" },
   ];
 
   return (
@@ -23,15 +33,15 @@ const About = () => {
           <h3 className=" text-xl leading-relaxed">
             Design and develop web applications, both{" "}
             <span className="font-light text-[#00bcd4]">frontend</span> and
-            <span className="font-light text-[#ff495d]"> backend</span>, with a
-            focus on clean code and user experience. My motto is
+            <span className="font-light text-[#ff495d]"> backend</span>, <br />{" "}
+            with a focus on clean code and user experience. My motto is
             <span className="font-light text-[#ffc107]">
               {" "}
               "See how infinite you are"
             </span>
           </h3>
         </div>
-        <div className="w-full md:w-1/2 p-4 relative overflow-visible">
+        <div className="w-full md:w-1/2 p-4 relative overflow-visible top-[-20px]">
           {/* Partie pour les cartes */}
           <div className="w-4/5 ">
             {/* Swiper Container */}
@@ -48,21 +58,25 @@ const About = () => {
                   className="relative bg-white rounded-lg shadow-md p-6"
                 >
                   <div className="absolute top-[-20px] left-1/2 transform -translate-x-1/2 z-10">
-                    <div className="bg-blue-500 text-white p-3 rounded-full flex items-center justify-center shadow-lg">
-                      <i className="fas fa-star text-lg"></i>
+                    <div className="bg-[#292b43] text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg border-2 border-white border-opacity-50">
+                      <i className={`fa-solid ${card.icon} text-lg`}></i>
                     </div>
                   </div>
 
-                  <h3 className="text-xl font-bold">{card.title}</h3>
-                  <p className="mt-2 text-gray-600">{card.description}</p>
+                  <h3 className="text-xl font-bold text-gray-600 text-center">
+                    {card.title}
+                  </h3>
+                  <p className="mt-2 text-gray-600 text-center">
+                    {card.description}
+                  </p>
                 </SwiperSlide>
               ))}
             </Swiper>
           </div>
 
           {/* Flèche de navigation à droite */}
-          <div className="swiper-button-next absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full w-1/5">
-            &gt;
+          <div className="swiper-button-next absolute top-1/2 right-0 transform -translate-y-1/2  p-2 rounded-full w-1/5">
+            <i className="fa-solid fa-arrow-right text-gray-300 text-2xl"></i>
           </div>
         </div>
       </div>

@@ -121,10 +121,6 @@ main {
 }
 
 .desc h1 {
-  font-size: 65px;
-  margin-left: 220px;
-  margin-right: 250px;
-  margin-top: 10px;
   font-weight: lighter;
   font-family: var(--font-inter), sans-serif;
 }
@@ -170,4 +166,12 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events {
+  padding-block: 40px;
+}
+
+.swiper-button-next::after {
+  content: none !important;
 }
