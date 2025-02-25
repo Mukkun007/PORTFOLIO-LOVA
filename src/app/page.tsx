@@ -11,11 +11,21 @@ export default function Page() {
     <div className="pagge">
       <CursorLight />
       <Header />
-      <Home />
-      <Biographie />
-      <About />
-      <Projects />
-      <Code />
+      <div id="home">
+        <Home />
+      </div>
+      <div id="biography">
+        <Biographie />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="code">
+        <Code />
+      </div>
     </div>
   );
 }
