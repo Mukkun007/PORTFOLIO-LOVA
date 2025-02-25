@@ -9,20 +9,20 @@ const About = () => {
     {
       title: "Web Development",
       description:
-        "Développer des applications web performantes et évolutives en optimisant le code.",
+        "Develop high-performance,\n scalable web applications by optimizing code.",
       icon: "fa-code",
     },
     {
       title: "Project Design",
       description:
-        "Concevoir des projets alliant créativité et fonctionnalité pour une expérience utilisateur optimale.",
+        "Design projects that combine creativity and functionality for an optimal user experience.",
       icon: "fa-diagram-project",
     },
     {
-      title: "Project Design",
+      title: "UI/UX Developer",
       description:
-        "Concevoir des projets alliant créativité et fonctionnalité pour une expérience utilisateur optimale.",
-      icon: "fa-diagram-project",
+        "Create intuitive and visually appealing user interfaces that enhance user experience.",
+      icon: "fa-palette",
     },
   ];
 
@@ -77,9 +77,12 @@ const About = () => {
                   <h3 className="text-xl font-bold text-white hover:text-[#5ee3bf] text-center mt-8">
                     {card.title}
                   </h3>
-                  <p className="mt-2 text-white text-center">
-                    {card.description}
-                  </p>
+                  <p
+                    className="mt-2 text-white text-center"
+                    dangerouslySetInnerHTML={{
+                      __html: card.description.replace(/\n/g, "<br/>"),
+                    }}
+                  ></p>
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -90,7 +93,7 @@ const About = () => {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="flex-1 bg-[#434451] rounded-lg shadow-md p-6 relative"
+                className="flex-1 bg-[#122b39] rounded-lg shadow-md p-6 relative"
               >
                 {/* Icône positionnée en absolute et centrée */}
                 <div className="absolute top-[-20px] left-1/2 transform -translate-x-1/2">
