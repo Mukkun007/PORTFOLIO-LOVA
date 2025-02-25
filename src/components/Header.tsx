@@ -1,11 +1,11 @@
 const Header = () => {
   return (
     <nav className="flex justify-between items-center p-4">
-      <div className="logo">
+      {/* <div className="logo">
         <h1 className="text-4xl font-semibold">
-          Lova <span className="text-[#ff495d]">.</span>
+          Lova <span className="text-[#265b6b]">.</span>
         </h1>
-      </div>
+      </div> */}
       <ul className="flex space-x-6">
         <li>
           <a href="#">Home</a>

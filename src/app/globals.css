@@ -19,46 +19,54 @@ html {
   scroll-behavior: smooth;
 }
 
+div.relative {
+  padding-top: 100px; /* Valeur qui correspond à la hauteur de la navbar */
+}
+
+/* Style de la navbar comme une île flottante */
 nav {
-  margin: 0;
-  /* background-color: #292b43; */
-  background-color: #0f172a;
+  position: absolute; /* Absolue pour ne pas affecter le flux du contenu */
+  top: 20px; /* Un peu d'espace du haut de la page */
+  left: 50%; /* Centré horizontalement */
+  transform: translateX(-50%); /* Ajuste la position pour un centrage parfait */
+  background-color: #0f172a; /* Couleur de fond de la navbar */
   padding: 10px 20px;
   display: flex;
   justify-content: space-between; /* Ajoute de l'espace entre les blocs */
   align-items: center; /* Centre les éléments verticalement */
-  width: 100%;
-  height: 100px; /* Hauteur de la navbar */
-  z-index: 10;
+  width: auto; /* Laisse la largeur s'adapter au contenu */
+  max-width: 900px; /* Limite la largeur maximale de la navbar */
+  height: 80px; /* Hauteur de la navbar */
+  z-index: 10; /* Permet de garder la navbar au-dessus des autres éléments */
+  border-radius: 20px; /* Coins arrondis */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour l'effet flottant */
+  transition: box-shadow 0.3s ease; /* Transition pour l'ombre douce */
 }
 
+/* Logo */
 nav .logo {
   letter-spacing: 2px;
-  flex-basis: 50%; /* Prend 50% de l'espace */
-  flex-grow: 1; /* Permet au logo de grandir selon l'espace disponible */
+  flex-basis: 50%;
+  flex-grow: 1;
   text-align: left;
-  margin-left: 200px;
+  margin-left: 20px;
 }
 
 nav .logo h1 {
   color: #fff;
-  font-size: 45px;
+  font-size: 40px; /* Ajuste la taille du texte */
   font-weight: lighter;
 }
 
-/* span {
-  color: #ff495d;
-} */
-
+/* Liste de liens */
 nav ul {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
-  flex-basis: 50%; /* Prend 50% de l'espace */
+  flex-basis: 50%;
   justify-content: flex-end;
-  margin-right: 200px;
-  margin-top: 5px;
+  margin-right: 20px;
   gap: 40px;
 }
 
@@ -70,7 +78,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: lighter;
-  font-size: 25px;
+  font-size: 18px; /* Ajuste la taille du texte */
   transition: color 0.3s ease;
   margin-bottom: 5px;
 }
@@ -78,6 +86,11 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: underline;
   color: #ff495d;
+}
+
+/* Effet d'ombre lors du survol de la navbar */
+nav:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ombre plus marquée au survol */
 }
 
 .scroll-to-top {

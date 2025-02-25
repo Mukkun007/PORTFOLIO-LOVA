@@ -19,10 +19,10 @@ const About = () => {
       icon: "fa-diagram-project",
     },
     {
-      title: "UX/UI Design",
+      title: "Project Design",
       description:
-        "Créer des interfaces modernes et intuitives pour une meilleure expérience utilisateur.",
-      icon: "fa-paint-brush",
+        "Concevoir des projets alliant créativité et fonctionnalité pour une expérience utilisateur optimale.",
+      icon: "fa-diagram-project",
     },
   ];
 
