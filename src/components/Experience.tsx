@@ -8,28 +8,22 @@ import {
 
 const experiences = [
   {
-    date: "2024 - 2025",
-    establishment: "Entreprise A",
-    position: "Développeur Web",
+    date: "February 2024 - February 2025",
+    establishment: "Banky Foiben'i Madagasikara",
+    position: "Service provider",
     icon: <FaLaptopCode />,
   },
   {
-    date: "2022",
-    establishment: "Entreprise B",
-    position: "Ingénieur Logiciel",
+    date: "July 2023 - October 2023",
+    establishment: "BAKANTIMO",
+    position: "IT trainee",
     icon: <FaBriefcase />,
   },
   {
-    date: "2020",
-    establishment: "Université C",
-    position: "Étudiant en Informatique",
+    date: "March 2021 - May 2021",
+    establishment: "Ministry of National Education of Madagasikara",
+    position: "IT trainee",
     icon: <FaUniversity />,
-  },
-  {
-    date: "2018",
-    establishment: "Stage D",
-    position: "Stagiaire Développement",
-    icon: <FaUserGraduate />,
   },
 ];
 
