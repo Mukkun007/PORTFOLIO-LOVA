@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Home from "@/components/Home";
 import About from "@/components/About";
 import Biographie from "@/components/Biographie";
+import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Code from "@/components/Code";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -20,6 +21,9 @@ export default function Page() {
       </div>
       <div id="about">
         <About />
+      </div>
+      <div id="experience">
+        <Experience />
       </div>
       <div id="projects">
         <Projects />

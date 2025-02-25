@@ -6,10 +6,13 @@ const Header = () => {
           <a href="#home">Home</a>
         </li>
         <li>
-          <a href="#biography">Biographie</a>
+          <a href="#biography">About Me</a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="#about">Skills</a>
+        </li>
+        <li>
+          <a href="#experience">Experiences</a>
         </li>
         <li>
           <a href="#projects">Projects</a>
