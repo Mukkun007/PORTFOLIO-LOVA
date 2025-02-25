@@ -25,12 +25,19 @@ const About = () => {
       {/* Partie de gauche */}
       <div className="w-full md:w-1/2 p-4 mt-10">
         <h2 className="font-bold text-3xl">What I do</h2>
-        <h3 className="text-xl leading-relaxed">
-          Design and develop web applications, both{" "}
-          <span className="font-light text-[#00bcd4]">frontend</span> and
-          <span className="font-light text-[#ff495d]"> backend</span>, <br />{" "}
-          with a focus on clean code and user experience. My motto is
-          <span className="font-light text-[#ffc107]">
+        <h3 className="text-xl leading-relaxed text-gray-300">
+          Design and develop web applications, both
+          <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
+            {" "}
+            frontend
+          </span>{" "}
+          and
+          <span className="font-bold text-white hover:text-[#ff495d] transition-colors duration-300">
+            {" "}
+            backend
+          </span>
+          , <br /> with a focus on clean code and user experience. My motto is
+          <span className="font-bold text-white hover:text-[#ffc107] transition-colors duration-300">
             {" "}
             "See how infinite you are"
           </span>

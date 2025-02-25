@@ -7,15 +7,29 @@ const Biographie = () => {
         </div>
         <div className="w-full md:w-3/5 p-4">
           <h2 className="font-bold text-3xl">Biographie</h2>
-          <h3 className="mt-5 text-xl leading-relaxed mr-[50px]">
+          <h3 className="mt-5 text-xl leading-relaxed mr-[50px] text-gray-300">
             Experienced with
-            <span className="font-bold text-[#00bcd4]"> Symfony</span> in my
-            first professional year, currently focused on{" "}
-            <span className="font-bold text-[#ff495d]">UX/UI design</span> and
-            passionate about creating user-friendly experiences while exploring
-            new technologies like{" "}
-            <span className="font-bold text-[#ff495d]"> React</span> and{" "}
-            <span className="font-bold text-[#00bcd4]"> Agile</span>.
+            <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
+              {" "}
+              Symfony
+            </span>{" "}
+            in my first professional year, currently focused on
+            <span className="font-bold text-white hover:text-[#ff495d] transition-colors duration-300">
+              {" "}
+              UX/UI design
+            </span>{" "}
+            and passionate about creating user-friendly experiences while
+            exploring new technologies like
+            <span className="font-bold text-white hover:text-[#ff495d] transition-colors duration-300">
+              {" "}
+              React
+            </span>{" "}
+            and
+            <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
+              {" "}
+              Agile
+            </span>
+            .
           </h3>
         </div>
         <div className="w-full md:w-1/5 p-4">

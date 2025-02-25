@@ -6,17 +6,17 @@ const Projects = () => {
   const projects = [
     {
       image: "/images/Grey.png",
-      title: "Web Development",
+      title: "Infrastructure Modernization",
       establishment: "Banky Foiben’ny Madagasikara",
-      projectName: "Intranet Upgrade",
+      projectName: "Symfony Framework Upgrade",
       description:
-        "Migrated the intranet platform from Symfony 3.4 to 6.4, modernizing the codebase for better performance, security, and maintainability. The upgrade involved refactoring legacy code, optimizing database queries, and ensuring full compatibility with the latest Symfony features, all while minimizing disruptions for users.",
+        "Led the migration of Banky Foiben'i Madagasikara's intranet platform from Symfony 3.4 to Symfony 6.4, ensuring better performance, enhanced security, and improved maintainability. This upgrade involved adapting legacy code, updating dependencies, and implementing best practices to optimize the system for long-term stability.",
     },
     {
       image: "/images/DOR.png",
-      title: "Web Development",
+      title: "Web Application Development",
       establishment: "Banky Foiben’ny Madagasikara",
-      projectName: "Mobile App Development",
+      projectName: "Internal Process Optimization Application",
       description:
         "Developed a cross-platform mobile app for e-commerce, enhancing the shopping experience with a user-friendly interface and optimized performance for both Android and iOS devices.",
     },
