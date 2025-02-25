@@ -40,7 +40,7 @@ const Biographie = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-instagram text-4xl text-white"></i>{" "}
+              <i className="fab fa-instagram text-4xl text-white hover:text-white hover:scale-110 hover:shadow-xl transition-all duration-300"></i>{" "}
               {/* Instagram */}
             </a>
             <a
@@ -48,7 +48,7 @@ const Biographie = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-linkedin text-4xl text-white"></i>{" "}
+              <i className="fab fa-linkedin text-4xl text-white hover:text-white hover:scale-110 hover:shadow-xl transition-all duration-300"></i>{" "}
               {/* LinkedIn */}
             </a>
             <a
@@ -56,7 +56,7 @@ const Biographie = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-whatsapp text-4xl text-white"></i>{" "}
+              <i className="fab fa-whatsapp text-4xl text-white hover:text-white hover:scale-110 hover:shadow-xl transition-all duration-300"></i>{" "}
               {/* WhatsApp */}
             </a>
             <a
@@ -64,7 +64,7 @@ const Biographie = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-github text-4xl text-white"></i>{" "}
+              <i className="fab fa-github text-4xl text-white hover:text-white hover:scale-110 hover:shadow-xl transition-all duration-300"></i>{" "}
               {/* GitHub */}
             </a>
           </div>
