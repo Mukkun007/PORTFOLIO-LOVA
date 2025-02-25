@@ -3,8 +3,15 @@ const Biographie = () => {
     <>
       <div className="biographie flex flex-wrap ml-[140px] mr-[220px] mt-10">
         <div className="w-full md:w-1/5 p-4 flex justify-center items-center">
-          <div className="w-[10rem] h-[10rem] border-4 border-[#00bcd4] rounded-full"></div>
+          <div className="w-[10rem] h-[10rem] border-4 border-[#00bcd4] rounded-full overflow-hidden flex justify-center items-center">
+            <img
+              src="/images/Image Lova.jpg"
+              alt="Profile"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
+
         <div className="w-full md:w-3/5 p-4">
           <h2 className="font-bold text-3xl">Biographie</h2>
           <h3 className="mt-5 text-xl leading-relaxed mr-[50px] text-gray-300">
