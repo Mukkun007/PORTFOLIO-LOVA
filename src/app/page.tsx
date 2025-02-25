@@ -5,6 +5,7 @@ import About from "@/components/About";
 import Biographie from "@/components/Biographie";
 import Projects from "@/components/Projects";
 import Code from "@/components/Code";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Page() {
   return (
@@ -25,6 +26,9 @@ export default function Page() {
       </div>
       <div id="code">
         <Code />
+      </div>
+      <div>
+        <ScrollToTop />
       </div>
     </div>
   );
