@@ -45,7 +45,7 @@ const About = () => {
             backend
           </span>
           , <br /> with a focus on clean code and user experience. My motto is
-          <span className="font-bold text-white hover:text-[#ffc107] transition-colors duration-300">
+          <span className="font-bold text-white hover:text-[#5ee3bf] transition-colors duration-300">
             {" "}
             "See how infinite you are"
           </span>
@@ -66,15 +66,15 @@ const About = () => {
               {cards.map((card, index) => (
                 <SwiperSlide
                   key={index}
-                  className="bg-[#434451] rounded-lg shadow-md p-6 w-[240px] flex-shrink-0 relative"
+                  className="bg-[#122b39] rounded-lg shadow-md p-6 w-[240px] flex-shrink-0 relative"
                 >
                   <div className="absolute top-[-20px] left-1/2 transform -translate-x-1/2">
-                    <div className="bg-[#292b43] text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg border-2 border-white border-opacity-50">
+                    <div className="bg-[#122b39] text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg border-2 border-white border-opacity-50">
                       <i className={`fa-solid ${card.icon} text-lg`}></i>
                     </div>
                   </div>
 
-                  <h3 className="text-xl font-bold text-white text-center mt-8">
+                  <h3 className="text-xl font-bold text-white hover:text-[#5ee3bf] text-center mt-8">
                     {card.title}
                   </h3>
                   <p className="mt-2 text-white text-center">
@@ -94,12 +94,12 @@ const About = () => {
               >
                 {/* Icône positionnée en absolute et centrée */}
                 <div className="absolute top-[-20px] left-1/2 transform -translate-x-1/2">
-                  <div className="bg-[#292b43] text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg border-2 border-white border-opacity-50">
+                  <div className="bg-[#122b39] text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg border-2 border-white border-opacity-50">
                     <i className={`fa-solid ${card.icon} text-lg`}></i>
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-white text-center mt-8">
+                <h3 className="text-xl font-bold text-white hover:text-[#5ee3bf] text-center mt-8">
                   {card.title}
                 </h3>
                 <p className="mt-2 text-white text-center">

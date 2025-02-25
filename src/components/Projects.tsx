@@ -11,6 +11,7 @@ const Projects = () => {
       projectName: "Symfony Framework Upgrade",
       description:
         "Led the migration of Banky Foiben'i Madagasikara's intranet platform from Symfony 3.4 to Symfony 6.4, ensuring better performance, enhanced security, and improved maintainability. This upgrade involved adapting legacy code, updating dependencies, and implementing best practices to optimize the system for long-term stability.",
+      tech: ["Symfony 6.4", "PHP", "Doctrine", "MySQL"], // ✅ Ajout des technologies
     },
     {
       image: "/images/DOR.png",
@@ -19,6 +20,7 @@ const Projects = () => {
       projectName: "Internal Process Optimization Application",
       description:
         "Developed a cross-platform mobile app for e-commerce, enhancing the shopping experience with a user-friendly interface and optimized performance for both Android and iOS devices.",
+      tech: ["React Native", "Node.js", "MongoDB"], // ✅ Technologies pour ce projet
     },
   ];
 
@@ -47,10 +49,22 @@ const Projects = () => {
             <div className="w-1/2 pl-4">
               <h2 className="text-xl font-light">{project.title}</h2>
               <h1 className="text-4xl font-bold mt-3">{project.projectName}</h1>
-              <h2 className="text-[-20px] font-light mt-3">
+              <h2 className="text-lg font-light mt-3">
                 {project.establishment}
               </h2>
               <p className="mt-8">{project.description}</p>
+
+              {/* ✅ Affichage des technologies */}
+              <div className="mt-6 flex flex-wrap gap-2">
+                {project.tech.map((tech, techIndex) => (
+                  <span
+                    key={techIndex}
+                    className="bg-[#122b39] text-[#5ee3bf] px-3 py-1 rounded-full text-sm"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         ))}
@@ -63,9 +77,9 @@ const Projects = () => {
           >
             <span className="mr-2 text-xl">
               {showAll ? (
-                <i className="fas fa-chevron-up"></i> // Flèche vers le haut pour "Show Less"
+                <i className="fas fa-chevron-up"></i>
               ) : (
-                <i className="fas fa-chevron-down"></i> // Flèche vers le bas pour "See More"
+                <i className="fas fa-chevron-down"></i>
               )}
             </span>
             <span className="font-semibold">

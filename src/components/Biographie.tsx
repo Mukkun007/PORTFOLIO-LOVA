@@ -3,7 +3,7 @@ const Biographie = () => {
     <>
       <div className="biographie flex flex-wrap ml-[140px] mr-[220px] mt-10">
         <div className="w-full md:w-1/5 p-4 flex justify-center items-center">
-          <div className="w-[10rem] h-[10rem] border-4 border-[#00bcd4] rounded-full overflow-hidden flex justify-center items-center">
+          <div className="w-[12rem] h-[12rem] border-4 border-[#122b39] rounded-full overflow-hidden flex justify-center items-center">
             <img
               src="/images/Image Lova.jpg"
               alt="Profile"

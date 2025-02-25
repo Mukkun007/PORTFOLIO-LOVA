@@ -25,7 +25,7 @@ const Header = () => {
             href="/CV/Curriculum Vitae - LOVA.pdf"
             download="Lova_CV"
             // className="text-white bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded-full transition-all duration-300"
-            className="text-white bg-[#0f172a] hover:bg-[#265b6b] hover:text-white py-2 px-4 rounded-full transition-all duration-300 border border-white"
+            className="text-white font-bold bg-[#122b39] hover:bg-[#5ee3bf] hover:text-white py-2 px-4 rounded-full transition-all duration-300"
           >
             Download CV
           </a>
