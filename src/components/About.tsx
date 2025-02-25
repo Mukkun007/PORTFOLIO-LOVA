@@ -18,14 +18,22 @@ const About = () => {
         "Concevoir des projets alliant créativité et fonctionnalité pour une expérience utilisateur optimale.",
       icon: "fa-diagram-project",
     },
+    {
+      title: "UX/UI Design",
+      description:
+        "Créer des interfaces modernes et intuitives pour une meilleure expérience utilisateur.",
+      icon: "fa-paint-brush",
+    },
   ];
 
   return (
     <div className="skills flex flex-wrap ml-[200px] mr-[220px] mt-[50px]">
       {/* Partie de gauche */}
-      <div className="w-full md:w-1/2 p-4 mt-10">
+      <div
+        className={`w-full md:w-1/2 p-4 ${cards.length > 2 ? "mt-10" : "mt-5"}`}
+      >
         <h2 className="font-bold text-3xl">What I do</h2>
-        <h3 className="text-xl leading-relaxed text-gray-300">
+        <h3 className="text-xl leading-relaxed text-gray-300 mt-5">
           Design and develop web applications, both
           <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
             {" "}
