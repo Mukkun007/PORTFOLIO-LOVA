@@ -7,6 +7,7 @@ import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Code from "@/components/Code";
 import ScrollToTop from "@/components/ScrollToTop";
+import Langue from "@/components/Langue";
 
 export default function Page() {
   return (
@@ -33,6 +34,9 @@ export default function Page() {
       </div>
       <div>
         <ScrollToTop />
+      </div>
+      <div>
+        <Langue />
       </div>
     </div>
   );
