@@ -19,7 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 
-div.relative {
+div.pagge {
   padding-top: 100px; /* Valeur qui correspond à la hauteur de la navbar */
 }
 
@@ -43,49 +43,27 @@ nav {
   transition: box-shadow 0.3s ease; /* Transition pour l'ombre douce */
 }
 
-/* Logo */
-nav .logo {
-  letter-spacing: 2px;
-  flex-basis: 50%;
-  flex-grow: 1;
-  text-align: left;
-  margin-left: 20px;
-}
-
-nav .logo h1 {
-  color: #fff;
-  font-size: 40px; /* Ajuste la taille du texte */
-  font-weight: lighter;
-}
-
 /* Liste de liens */
 nav ul {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
-  flex-basis: 50%;
+  gap: 20px; /* Moins d'espace entre les éléments */
   justify-content: flex-end;
-  margin-right: 20px;
-  gap: 40px;
 }
 
-nav ul li {
-  margin-left: 20px;
-}
-
+/* Lien */
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: lighter;
   font-size: 18px; /* Ajuste la taille du texte */
   transition: color 0.3s ease;
-  margin-bottom: 5px;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
-  /* color: #ff495d; */
   color: #00bcd4;
 }
 
