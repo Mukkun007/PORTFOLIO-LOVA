@@ -1,3 +1,4 @@
+import CursorLight from "@/components/CursorLight";
 import Header from "@/components/Header";
 import Home from "@/components/Home";
 import About from "@/components/About";
@@ -7,7 +8,8 @@ import Code from "@/components/Code";
 
 export default function Page() {
   return (
-    <div>
+    <div className="relative">
+      <CursorLight />
       <Header />
       <Home />
       <Biographie />
