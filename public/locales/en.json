@@ -20,5 +20,21 @@
       "p4": "and"
     },
     "connect": "Lets Connect"
+  },
+  "about": {
+    "what": "What I Do",
+    "desc": {
+      "p1": "Design and develop web applications, both",
+      "p2": "with a focus on clean code and user experience. My motto is",
+      "span1": "See how infinite you are"
+    },
+    "card": {
+      "title1": "Web Development",
+      "desc1": "Develop high-performance,\n scalable web applications by optimizing code",
+      "title2": "Project Design",
+      "desc2": "Design projects that combine creativity and functionality for an optimal user experience",
+      "title3": "UI/UX Developer",
+      "desc3": "Create intuitive and visually appealing user interfaces that enhance user experience"
+    }
   }
 }

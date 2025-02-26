@@ -1,27 +1,27 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 const About = () => {
+  const t = useTranslations();
+
   const cards = [
     {
-      title: "Web Development",
-      description:
-        "Develop high-performance,\n scalable web applications by optimizing code.",
+      title: t("about.card.title1"),
+      description: t("about.card.desc1"),
       icon: "fa-code",
     },
     {
-      title: "Project Design",
-      description:
-        "Design projects that combine creativity and functionality for an optimal user experience.",
+      title: t("about.card.title2"),
+      description: t("about.card.desc2"),
       icon: "fa-diagram-project",
     },
     {
-      title: "UI/UX Developer",
-      description:
-        "Create intuitive and visually appealing user interfaces that enhance user experience.",
+      title: t("about.card.title3"),
+      description: t("about.card.desc3"),
       icon: "fa-palette",
     },
   ];
@@ -32,22 +32,22 @@ const About = () => {
       <div
         className={`w-full md:w-1/2 p-4 ${cards.length > 2 ? "mt-10" : "mt-5"}`}
       >
-        <h2 className="font-bold text-3xl">What I do</h2>
+        <h2 className="font-bold text-3xl">{t("about.what")}</h2>
         <h3 className="text-xl leading-relaxed text-gray-300 mt-5">
-          Design and develop web applications, both
+          {t("about.desc.p1")}
           <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
             {" "}
             frontend
           </span>{" "}
-          and
+          {t("biographie.desc.p4")}
           <span className="font-bold text-white hover:text-[#ff495d] transition-colors duration-300">
             {" "}
             backend
           </span>
-          , <br /> with a focus on clean code and user experience. My motto is
+          , <br /> {t("about.desc.p2")}
           <span className="font-bold text-white hover:text-[#5ee3bf] transition-colors duration-300">
             {" "}
-            "See how infinite you are"
+            "{t("about.desc.span1")}"
           </span>
         </h3>
       </div>

@@ -20,5 +20,21 @@
       "p4": "et"
     },
     "connect": "Connectons"
+  },
+  "about": {
+    "what": "Ce que je fais",
+    "desc": {
+      "p1": "Concevoir et développer des applications web, à la fois",
+      "p2": "en mettant l'accent sur la propreté du code et l'expérience de l'utilisateur. Ma devise est",
+      "span1": "Voyez comme vous êtes infini"
+    },
+    "card": {
+      "title1": "Développement Web",
+      "desc1": "Développer des applications web performantes et évolutives en optimisant le code",
+      "title2": "Conception de projet",
+      "desc2": "Concevoir des projets qui allient créativité et fonctionnalité pour une expérience utilisateur optimale",
+      "title3": "Développeur UI/UX",
+      "desc3": "Créer des interfaces utilisateur intuitives et visuellement attrayantes qui améliorent l'expérience de l'utilisateur"
+    }
   }
 }
