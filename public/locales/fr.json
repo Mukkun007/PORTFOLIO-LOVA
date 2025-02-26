@@ -1,3 +1,13 @@
 {
-  "greeting": "Salut, je suis Tahiana Lova, un jeune développeur full-stack passionné par le développement web. J'aime créer des solutions innovantes et explorer de nouvelles technologies dans des environnements collaboratifs."
+  "home": {
+    "greeting": "Salut, je suis Tahiana Lova, développeur full-stack passionné par le développement web. J’aime concevoir des solutions innovantes et explorer de nouvelles technologies pour améliorer l’expérience utilisateur"
+  },
+  "header": {
+    "home": "Acceuil",
+    "about": "Profil",
+    "skills": "Compétences",
+    "experiences": "Experiences",
+    "projects": "Projets",
+    "resume": "CV"
+  }
 }

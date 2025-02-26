@@ -9,7 +9,7 @@ const Home = () => {
     <main className="flex justify-between items-center">
       <div className="desc">
         <h1 className="ml-[220px] mr-[250px] mt-[10px] font-bold text-5xl md:text-[65px] bg-gradient-to-br from-[#52a8b6] via-[#265b6b] to-[#52a8b6] text-transparent bg-clip-text md:leading-[75px]">
-          {t("greeting")} {/* Traduction dynamique */}
+          {t("home.greeting")}
         </h1>
       </div>
     </main>

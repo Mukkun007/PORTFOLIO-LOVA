@@ -1,21 +1,26 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 const Header = () => {
+  const t = useTranslations();
+
   return (
     <nav className="flex justify-between items-center p-4 max-w-4xl mx-auto">
       <ul className="flex space-x-6">
         <li>
-          <a href="#home">Home</a>
+          <a href="#home">{t("header.home")}</a>
         </li>
         <li>
-          <a href="#biography">About Me</a>
+          <a href="#biography">{t("header.about")}</a>
         </li>
         <li>
-          <a href="#about">Skills</a>
+          <a href="#about">{t("header.skills")}</a>
         </li>
         <li>
-          <a href="#experience">Experiences</a>
+          <a href="#experience">{t("header.experiences")}</a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a href="#projects">{t("header.projects")}</a>
         </li>
         <li>
           <a href="#code">Code</a>
@@ -27,7 +32,7 @@ const Header = () => {
             // className="text-white bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded-full transition-all duration-300"
             className="text-white font-bold bg-[#122b39] hover:bg-[#5ee3bf] hover:text-white py-2 px-4 rounded-full transition-all duration-300"
           >
-            Download CV
+            {t("header.resume")}
           </a>
         </li>
       </ul>
