@@ -34,7 +34,15 @@
       "title2": "Conception de projet",
       "desc2": "Concevoir des projets qui allient créativité et fonctionnalité pour une expérience utilisateur optimale",
       "title3": "Développeur UI/UX",
-      "desc3": "Créer des interfaces utilisateur intuitives et visuellement attrayantes qui améliorent l'expérience de l'utilisateur"
+      "desc3": "Créer des interfaces intuitives et attrayantes pour améliorer l'expérience utilisateur"
     }
+  },
+  "experience": {
+    "date1": "Février 2024 - Février 2025",
+    "position1": "Prestataire de services",
+    "date2": "Juillet 2023 - Octobre 2023",
+    "position2": "Stagiaire en informatique",
+    "date3": "Mars 2021 - mai 2021",
+    "etablissement": "Ministère de l'Education Nationale de Madagasikara"
   }
 }

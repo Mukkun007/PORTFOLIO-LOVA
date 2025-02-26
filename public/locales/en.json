@@ -36,5 +36,13 @@
       "title3": "UI/UX Developer",
       "desc3": "Create intuitive and visually appealing user interfaces that enhance user experience"
     }
+  },
+  "experience": {
+    "date1": "February 2024 - February 2025",
+    "position1": "Service provider",
+    "date2": "July 2023 - October 2023",
+    "position2": "IT trainee",
+    "date3": "March 2021 - May 2021",
+    "etablissement": "Ministry of National Education of Madagasikara"
   }
 }

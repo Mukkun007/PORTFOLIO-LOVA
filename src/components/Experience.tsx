@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 import React from "react";
 import {
   FaBriefcase,
@@ -6,28 +10,30 @@ import {
   FaUserGraduate,
 } from "react-icons/fa";
 
-const experiences = [
-  {
-    date: "February 2024 - February 2025",
-    establishment: "Banky Foiben'i Madagasikara",
-    position: "Service provider",
-    icon: <FaLaptopCode />,
-  },
-  {
-    date: "July 2023 - October 2023",
-    establishment: "BAKANTIMO",
-    position: "IT trainee",
-    icon: <FaBriefcase />,
-  },
-  {
-    date: "March 2021 - May 2021",
-    establishment: "Ministry of National Education of Madagasikara",
-    position: "IT trainee",
-    icon: <FaUniversity />,
-  },
-];
-
 const Experience = () => {
+  const t = useTranslations();
+
+  const experiences = [
+    {
+      date: t("experience.date1"),
+      establishment: "Banky Foiben'i Madagasikara",
+      position: t("experience.position1"),
+      icon: <FaLaptopCode />,
+    },
+    {
+      date: t("experience.date2"),
+      establishment: "BAKANTIMO",
+      position: t("experience.position2"),
+      icon: <FaBriefcase />,
+    },
+    {
+      date: "March 2021 - May 2021",
+      establishment: t("experience.etablissement"),
+      position: t("experience.position2"),
+      icon: <FaUniversity />,
+    },
+  ];
+
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#0f172a] mt-10">
       <div className="relative w-1/2">
