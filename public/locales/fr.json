@@ -9,5 +9,16 @@
     "experiences": "Experiences",
     "projects": "Projets",
     "resume": "CV"
+  },
+  "biographie": {
+    "about": "Profil",
+    "desc": {
+      "p1": "Expérimenté avec",
+      "p2": "dans ma première année professionnelle, actuellement concentré sur",
+      "span2": "le design UX/UI",
+      "p3": "et passionné par la création d'expériences conviviales tout en explorant de nouvelles technologies comme",
+      "p4": "et"
+    },
+    "connect": "Connectons"
   }
 }

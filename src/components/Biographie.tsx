@@ -1,4 +1,10 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 const Biographie = () => {
+  const t = useTranslations();
+
   return (
     <>
       <div className="biographie flex flex-wrap ml-[140px] mr-[220px] mt-10">
@@ -13,25 +19,24 @@ const Biographie = () => {
         </div>
 
         <div className="w-full md:w-3/5 p-4">
-          <h2 className="font-bold text-3xl">Biographie</h2>
+          <h2 className="font-bold text-3xl">{t("biographie.about")}</h2>
           <h3 className="mt-5 text-xl leading-relaxed mr-[50px] text-gray-300">
-            Experienced with
+            {t("biographie.desc.p1")}
             <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
               {" "}
               Symfony
             </span>{" "}
-            in my first professional year, currently focused on
+            {t("biographie.desc.p2")}
             <span className="font-bold text-white hover:text-[#ff495d] transition-colors duration-300">
               {" "}
-              UX/UI design
+              {t("biographie.desc.span2")}
             </span>{" "}
-            and passionate about creating user-friendly experiences while
-            exploring new technologies like
+            {t("biographie.desc.p3")}
             <span className="font-bold text-white hover:text-[#ff495d] transition-colors duration-300">
               {" "}
               React
             </span>{" "}
-            and
+            {t("biographie.desc.p4")}
             <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
               {" "}
               Agile
@@ -40,7 +45,7 @@ const Biographie = () => {
           </h3>
         </div>
         <div className="w-full md:w-1/5 p-4">
-          <h2 className="font-bold text-3xl">Lets Connect</h2>
+          <h2 className="font-bold text-3xl">{t("biographie.connect")}</h2>
           <div className="reseaux flex space-x-4 mt-5">
             <a
               href="https://www.instagram.com"
