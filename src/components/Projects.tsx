@@ -1,25 +1,26 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 const Projects = () => {
+  const t = useTranslations();
+
   const projects = [
     {
       image: "/images/Grey.png",
-      title: "Infrastructure Modernization",
+      title: t("project.title1"),
       establishment: "Banky Foiben’ny Madagasikara",
-      projectName: "Symfony Framework Upgrade",
-      description:
-        "Led the migration of Banky Foiben'i Madagasikara's intranet platform from Symfony 3.4 to Symfony 6.4, ensuring better performance, enhanced security, and improved maintainability. This upgrade involved adapting legacy code, updating dependencies, and implementing best practices to optimize the system for long-term stability.",
+      projectName: t("project.project1"),
+      description: t("project.desc1"),
       tech: ["Symfony 6.4", "PHP", "Doctrine", "MySQL"], // ✅ Ajout des technologies
     },
     {
       image: "/images/DOR.png",
-      title: "Web Application Development",
+      title: t("project.title2"),
       establishment: "Banky Foiben’ny Madagasikara",
-      projectName: "Internal Process Optimization Application",
-      description:
-        "Developed a cross-platform mobile app for e-commerce, enhancing the shopping experience with a user-friendly interface and optimized performance for both Android and iOS devices.",
+      projectName: t("project.project2"),
+      description: t("project.desc2"),
       tech: ["React Native", "Node.js", "MongoDB"], // ✅ Technologies pour ce projet
     },
   ];

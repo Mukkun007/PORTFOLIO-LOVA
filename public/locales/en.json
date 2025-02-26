@@ -44,5 +44,13 @@
     "position2": "IT trainee",
     "date3": "March 2021 - May 2021",
     "etablissement": "Ministry of National Education of Madagasikara"
+  },
+  "project": {
+    "title1": "Infrastructure Modernization",
+    "project1": "Symfony Framework Upgrade",
+    "desc1": "Led the migration of Banky Foiben'i Madagasikara's intranet platform from Symfony 3.4 to Symfony 6.4, ensuring better performance, enhanced security, and improved maintainability. This upgrade involved adapting legacy code, updating dependencies, and implementing best practices to optimize the system for long-term stability",
+    "title2": "Web Application Development",
+    "project2": "Internal Process Optimization Application",
+    "desc2": "Developed a cross-platform mobile app for e-commerce, enhancing the shopping experience with a user-friendly interface and optimized performance for both Android and iOS devices"
   }
 }

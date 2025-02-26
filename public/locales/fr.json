@@ -44,5 +44,13 @@
     "position2": "Stagiaire en informatique",
     "date3": "Mars 2021 - mai 2021",
     "etablissement": "Ministère de l'Education Nationale de Madagasikara"
+  },
+  "project": {
+    "title1": "Modernisation des infrastructures",
+    "project1": "Mise à jour du framework Symfony",
+    "desc1": "A dirigé la migration de la plateforme intranet de Banky Foiben'i Madagasikara de Symfony 3.4 à Symfony 6.4, en garantissant de meilleures performances, une sécurité renforcée et une meilleure maintenabilité. Cette mise à niveau a nécessité l'adaptation du code existant, la mise à jour des dépendances et la mise en œuvre des meilleures pratiques afin d'optimiser le système pour une stabilité à long terme",
+    "title2": "Développement d'applications web",
+    "project2": "Application d'optimisation des processus internes",
+    "desc2": "Développement d'une application mobile multiplateforme pour le commerce électronique, améliorant l'expérience d'achat grâce à une interface conviviale et à des performances optimisées pour les appareils Android et iOS."
   }
 }
