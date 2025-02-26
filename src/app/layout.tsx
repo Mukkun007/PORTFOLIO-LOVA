@@ -1,3 +1,5 @@
+import { IntlProvider } from "next-intl";
+import Langue from "@/components/Langue";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -52,9 +54,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        {/* <div className="scroll-to-top">
-          <i className="fa-solid fa-globe"></i>
-        </div> */}
       </body>
     </html>
   );

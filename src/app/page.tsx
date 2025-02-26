@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+import { IntlProvider } from "next-intl";
 import CursorLight from "@/components/CursorLight";
 import Header from "@/components/Header";
 import Home from "@/components/Home";
@@ -10,34 +14,39 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Langue from "@/components/Langue";
 
 export default function Page() {
+  const [locale, setLocale] = useState("en"); // Gestion de la langue
+  const messages = require(`../../public/locales/${locale}.json`);
+
   return (
-    <div className="pagge">
-      <CursorLight />
-      <Header />
-      <div id="home">
-        <Home />
+    <IntlProvider locale={locale} messages={messages}>
+      <div className="pagge">
+        <CursorLight />
+        <Header />
+        <div id="home">
+          <Home />
+        </div>
+        <div id="biography">
+          <Biographie />
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div id="experience">
+          <Experience />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+        <div id="code">
+          <Code />
+        </div>
+        <div>
+          <ScrollToTop />
+        </div>
+        <div>
+          <Langue onChangeLang={setLocale} currentLang={locale} />
+        </div>
       </div>
-      <div id="biography">
-        <Biographie />
-      </div>
-      <div id="about">
-        <About />
-      </div>
-      <div id="experience">
-        <Experience />
-      </div>
-      <div id="projects">
-        <Projects />
-      </div>
-      <div id="code">
-        <Code />
-      </div>
-      <div>
-        <ScrollToTop />
-      </div>
-      <div>
-        <Langue />
-      </div>
-    </div>
+    </IntlProvider>
   );
 }
