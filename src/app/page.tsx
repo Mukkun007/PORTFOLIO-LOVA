@@ -19,7 +19,7 @@ export default function Page() {
 
   return (
     <IntlProvider locale={locale} messages={messages}>
-      <div className="pagge">
+      <div className="page">
         <CursorLight />
         <Header />
         <div id="home">

@@ -19,7 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 
-div.pagge {
+div.page {
   padding-top: 100px; /* Valeur qui correspond à la hauteur de la navbar */
 }
 
