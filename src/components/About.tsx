@@ -27,11 +27,9 @@ const About = () => {
   ];
 
   return (
-    <div className="skills flex flex-wrap ml-[200px] mr-[220px] mt-[50px]">
-      {/* Partie de gauche */}
-      <div
-        className={`w-full md:w-1/2 p-4 ${cards.length > 2 ? "mt-10" : "mt-5"}`}
-      >
+    <div className="skills flex flex-wrap mx-4 lg:mx-[200px] mt-10">
+      {/* Partie gauche */}
+      <div className="w-full md:w-1/2 p-4">
         <h2 className="font-bold text-3xl">{t("about.what")}</h2>
         <h3 className="text-xl leading-relaxed text-gray-300 mt-5">
           {t("about.desc.p1")}
@@ -58,15 +56,20 @@ const About = () => {
           // Swiper si plus de 2 cartes
           <div className="relative overflow-hidden">
             <Swiper
-              spaceBetween={15} // Espace réduit entre les cartes pour voir la suivante
-              slidesPerView={2.2} // Affiche 2 cartes et une partie de la 3e
-              grabCursor={true} // Curseur amélioré
+              spaceBetween={15}
+              slidesPerView={1.2} // Mieux adapté pour mobile
+              breakpoints={{
+                640: { slidesPerView: 1.5 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 2.2 },
+              }}
+              grabCursor={true}
               className="w-full"
             >
               {cards.map((card, index) => (
                 <SwiperSlide
                   key={index}
-                  className="bg-[#122b39] rounded-lg shadow-md p-6 w-[240px] flex-shrink-0 relative"
+                  className="bg-[#122b39] rounded-lg shadow-md p-6 w-[220px] flex-shrink-0 relative"
                 >
                   <div className="absolute top-[-20px] left-1/2 transform -translate-x-1/2">
                     <div className="bg-[#122b39] text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg border-2 border-white border-opacity-50">
@@ -89,13 +92,13 @@ const About = () => {
           </div>
         ) : (
           // Affichage flex normal si ≤ 2 cartes
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             {cards.map((card, index) => (
               <div
                 key={index}
                 className="flex-1 bg-[#122b39] rounded-lg shadow-md p-6 relative"
               >
-                {/* Icône positionnée en absolute et centrée */}
+                {/* Icône centrée */}
                 <div className="absolute top-[-20px] left-1/2 transform -translate-x-1/2">
                   <div className="bg-[#122b39] text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg border-2 border-white border-opacity-50">
                     <i className={`fa-solid ${card.icon} text-lg`}></i>
