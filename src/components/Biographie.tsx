@@ -7,9 +7,9 @@ const Biographie = () => {
 
   return (
     <>
-      <div className="biographie flex flex-wrap ml-[40px] mr-[40px] mt-2 md:mt-[6rem] md:justify-center">
+      <div className="biographie flex flex-wrap ml-[40px] 2xl:ml[100px] mr-[40px] 2xl:mr[100px] mt-2 md:mt-[6rem] 2xl:ml-[140px] 2xl:mr-[140px] md:justify-center">
         <div className="w-full lg:w-1/5 p-4 flex justify-center items-center">
-          <div className="w-[12rem] lg:w-[11rem] h-[10rem] lg:h-[10rem] border-4 border-[#122b39] rounded-full overflow-hidden flex justify-center items-center">
+          <div className="w-[12rem] lg:w-[11rem] xl:w-[12rem] h-[12rem] lg:h-[10rem] xl:h-[12rem] border-4 border-[#122b39] rounded-full overflow-hidden flex justify-center items-center">
             <img
               src="/images/Image Lova.jpg"
               alt="Profile"
@@ -19,7 +19,7 @@ const Biographie = () => {
         </div>
 
         <div className="w-full lg:w-3/5 p-4">
-          <h2 className="text-center lg:text-left font-bold text-3xl sm:text-[40px] md:text-[35px] lg:text-[40px] xl:text-[50px] 2xl:text-[60px]">
+          <h2 className="text-center lg:text-left font-bold text-3xl sm:text-[40px] md:text-[35px] lg:text-[40px] xl:text-3xl 2xl:text-[40px]">
             {t("biographie.about")}
           </h2>
           <h3 className="text-center lg:text-left mt-5 text-xl leading-relaxed text-gray-300">
@@ -50,7 +50,7 @@ const Biographie = () => {
           <h2 className="text-center lg:text-left font-bold text-3xl">
             {t("biographie.connect")}
           </h2>
-          <div className="reseaux lg:ml-3 flex justify-center space-x-4 lg:space-x-3 mt-5">
+          <div className="reseaux flex justify-center lg:justify-start space-x-4 lg:space-x-3 mt-5">
             <a
               href="https://www.instagram.com"
               target="_blank"
