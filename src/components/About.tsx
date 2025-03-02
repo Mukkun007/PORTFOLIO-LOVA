@@ -27,7 +27,7 @@ const About = () => {
   ];
 
   return (
-    <div className="skills flex flex-wrap ml-[200px] mr-[220px] mt-[50px]">
+    <div className="skills text-center flex flex-wrap ml-[40px] mr-[40px]">
       {/* Partie de gauche */}
       <div
         className={`w-full md:w-1/2 p-4 ${cards.length > 2 ? "mt-10" : "mt-5"}`}
@@ -59,7 +59,7 @@ const About = () => {
           <div className="relative overflow-hidden">
             <Swiper
               spaceBetween={15} // Espace réduit entre les cartes pour voir la suivante
-              slidesPerView={2.2} // Affiche 2 cartes et une partie de la 3e
+              slidesPerView={1.2} // Affiche 2 cartes et une partie de la 3e
               grabCursor={true} // Curseur amélioré
               className="w-full"
             >
