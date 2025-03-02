@@ -7,7 +7,7 @@ const Biographie = () => {
 
   return (
     <>
-      <div className="biographie flex flex-wrap ml-[140px] mr-[220px] mt-10">
+      <div className="biographie flex flex-wrap ml-[40px] mr-[40px] mt-2">
         <div className="w-full md:w-1/5 p-4 flex justify-center items-center">
           <div className="w-[12rem] h-[12rem] border-4 border-[#122b39] rounded-full overflow-hidden flex justify-center items-center">
             <img
@@ -19,8 +19,10 @@ const Biographie = () => {
         </div>
 
         <div className="w-full md:w-3/5 p-4">
-          <h2 className="font-bold text-3xl">{t("biographie.about")}</h2>
-          <h3 className="mt-5 text-xl leading-relaxed mr-[50px] text-gray-300">
+          <h2 className="text-center font-bold text-3xl">
+            {t("biographie.about")}
+          </h2>
+          <h3 className="text-center mt-5 text-xl leading-relaxed text-gray-300">
             {t("biographie.desc.p1")}
             <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
               {" "}
@@ -45,8 +47,10 @@ const Biographie = () => {
           </h3>
         </div>
         <div className="w-full md:w-1/5 p-4">
-          <h2 className="font-bold text-3xl">{t("biographie.connect")}</h2>
-          <div className="reseaux flex space-x-4 mt-5">
+          <h2 className="text-center font-bold text-3xl">
+            {t("biographie.connect")}
+          </h2>
+          <div className="reseaux flex justify-center space-x-4 mt-5">
             <a
               href="https://www.instagram.com"
               target="_blank"
