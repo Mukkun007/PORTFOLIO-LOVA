@@ -7,9 +7,9 @@ const Biographie = () => {
 
   return (
     <>
-      <div className="biographie flex flex-wrap ml-[40px] mr-[40px] mt-2">
-        <div className="w-full md:w-1/5 p-4 flex justify-center items-center">
-          <div className="w-[12rem] h-[12rem] border-4 border-[#122b39] rounded-full overflow-hidden flex justify-center items-center">
+      <div className="biographie flex flex-wrap ml-[40px] mr-[40px] mt-2 md:mt-[6rem] md:justify-center">
+        <div className="w-full lg:w-1/5 p-4 flex justify-center items-center">
+          <div className="w-[12rem] lg:w-[11rem] h-[10rem] lg:h-[10rem] border-4 border-[#122b39] rounded-full overflow-hidden flex justify-center items-center">
             <img
               src="/images/Image Lova.jpg"
               alt="Profile"
@@ -18,11 +18,11 @@ const Biographie = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-3/5 p-4">
-          <h2 className="text-center font-bold text-3xl">
+        <div className="w-full lg:w-3/5 p-4">
+          <h2 className="text-center lg:text-left font-bold text-3xl sm:text-[40px] md:text-[35px] lg:text-[40px] xl:text-[50px] 2xl:text-[60px]">
             {t("biographie.about")}
           </h2>
-          <h3 className="text-center mt-5 text-xl leading-relaxed text-gray-300">
+          <h3 className="text-center lg:text-left mt-5 text-xl leading-relaxed text-gray-300">
             {t("biographie.desc.p1")}
             <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
               {" "}
@@ -46,11 +46,11 @@ const Biographie = () => {
             .
           </h3>
         </div>
-        <div className="w-full md:w-1/5 p-4">
-          <h2 className="text-center font-bold text-3xl">
+        <div className="w-full lg:w-1/5 p-4">
+          <h2 className="text-center lg:text-left font-bold text-3xl">
             {t("biographie.connect")}
           </h2>
-          <div className="reseaux flex justify-center space-x-4 mt-5">
+          <div className="reseaux lg:ml-3 flex justify-center space-x-4 lg:space-x-3 mt-5">
             <a
               href="https://www.instagram.com"
               target="_blank"
