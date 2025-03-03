@@ -30,7 +30,7 @@ const About = () => {
     <div className="skills text-center flex flex-wrap ml-[40px] mr-[40px]">
       {/* Partie de gauche */}
       <div
-        className={`w-full md:w-1/2 p-4 ${cards.length > 2 ? "mt-10" : "mt-5"}`}
+        className={`w-full lg:w-1/2 p-4 ${cards.length > 2 ? "mt-10" : "mt-5"}`}
       >
         <h2 className="font-bold text-3xl">{t("about.what")}</h2>
         <h3 className="text-xl leading-relaxed text-gray-300 mt-5">
@@ -53,20 +53,29 @@ const About = () => {
       </div>
 
       {/* Partie droite */}
-      <div className="w-full md:w-1/2 p-4">
+      <div className="w-full lg:w-1/2 p-4">
         {cards.length > 2 ? (
           // Swiper si plus de 2 cartes
           <div className="relative overflow-hidden">
             <Swiper
               spaceBetween={15} // Espace réduit entre les cartes pour voir la suivante
-              slidesPerView={1.2} // Affiche 2 cartes et une partie de la 3e
+              // slidesPerView={1.2} // Affiche 2 cartes et une partie de la 3e
               grabCursor={true} // Curseur amélioré
               className="w-full"
+              breakpoints={{
+                327: { slidesPerView: 1.2 }, // sm
+                416: { slidesPerView: 1.2 }, // sm
+                640: { slidesPerView: 2.2 }, // sm
+                768: { slidesPerView: 2.7 }, // md
+                1024: { slidesPerView: 1.7 }, // lg
+                1280: { slidesPerView: 2.2 }, // xl
+                1536: { slidesPerView: 2.5 }, // 2xl
+              }}
             >
               {cards.map((card, index) => (
                 <SwiperSlide
                   key={index}
-                  className="bg-[#122b39] rounded-lg shadow-md p-6 w-[240px] flex-shrink-0 relative"
+                  className="bg-[#122b39] mt-10 rounded-lg shadow-md p-6 w-[240px] flex-shrink-0 relative"
                 >
                   <div className="absolute top-[-20px] left-1/2 transform -translate-x-1/2">
                     <div className="bg-[#122b39] text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg border-2 border-white border-opacity-50">
