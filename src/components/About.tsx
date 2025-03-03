@@ -27,13 +27,13 @@ const About = () => {
   ];
 
   return (
-    <div className="skills text-center flex flex-wrap ml-[40px] mr-[40px]">
+    <div className="skills text-center 2xl:mr-[200px] 2xl:ml-[200px] flex flex-wrap ml-[40px] mr-[40px]">
       {/* Partie de gauche */}
       <div
         className={`w-full lg:w-1/2 p-4 ${cards.length > 2 ? "mt-10" : "mt-5"}`}
       >
-        <h2 className="font-bold text-3xl">{t("about.what")}</h2>
-        <h3 className="text-xl leading-relaxed text-gray-300 mt-5">
+        <h2 className="font-bold lg:text-left text-3xl">{t("about.what")}</h2>
+        <h3 className="text-xl lg:text-left leading-relaxed text-gray-300 mt-5">
           {t("about.desc.p1")}
           <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
             {" "}
@@ -44,7 +44,7 @@ const About = () => {
             {" "}
             backend
           </span>
-          , <br /> {t("about.desc.p2")}
+          , {t("about.desc.p2")}
           <span className="font-bold text-white hover:text-[#5ee3bf] transition-colors duration-300">
             {" "}
             "{t("about.desc.span1")}"
