@@ -36,11 +36,11 @@ const Projects = () => {
         Notable Work
       </h1>
 
-      <div className="flex flex-wrap ml-[210px] mr-[220px] mt-[10px] gap-8">
+      <div className="flex flex-wrap w-full px-[210px] mt-[10px] gap-8">
         {displayedProjects.map((project, index) => (
-          <div key={index} className="w-full p-4 flex">
+          <div key={index} className="flex-wrap">
             {/* Image à gauche */}
-            <div className="w-1/2">
+            <div className="lg:w-1/2">
               <img
                 src={project.image}
                 alt={project.projectName}
@@ -49,7 +49,7 @@ const Projects = () => {
             </div>
 
             {/* Détails du projet à droite */}
-            <div className="w-1/2 pl-4">
+            <div className="lg:w-1/2 pl-4">
               <h2 className="text-xl font-light">{project.title}</h2>
               <h1 className="text-4xl font-bold mt-3">{project.projectName}</h1>
               <h2 className="text-lg font-light mt-3">
