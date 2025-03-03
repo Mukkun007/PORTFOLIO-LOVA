@@ -1,14 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-
 import React from "react";
-import {
-  FaBriefcase,
-  FaUniversity,
-  FaLaptopCode,
-  FaUserGraduate,
-} from "react-icons/fa";
+import { FaBriefcase, FaUniversity, FaLaptopCode } from "react-icons/fa";
 
 const Experience = () => {
   const t = useTranslations();
@@ -36,34 +30,36 @@ const Experience = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#0f172a] mt-10">
-      <div className="relative w-1/2">
-        {/* Ligne verticale */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-[#122b39] h-full"></div>
+      <div className="relative w-2/3">
+        {/* Ligne verticale encore plus à gauche */}
+        <div className="absolute left-[-10px] w-1 bg-[#122b39] h-full lg:left-1/2 lg:transform lg:-translate-x-1/2"></div>
 
-        {/* Éléments de la timeline */}
+        {/* Expériences (cartes alignées à droite) */}
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className={`flex ${
+            className={`flex justify-end my-[100px] relative lg:${
               index % 2 === 0 ? "justify-start" : "justify-end"
-            } my-[150px] relative`}
+            } lg:my-[150px] lg:relative`}
           >
-            {/* Cercle avec icône */}
-            <div className="w-[70px] h-[70px] bg-[#122b39] rounded-full flex items-center justify-center text-white text-2xl absolute left-1/2 transform -translate-x-1/2">
+            {/* Icône directement SUR la timeline */}
+            <div className="w-[50px] sm:w-[55px] md:w-[60px] lg:w-[70px] h-[50px] sm:h-[55px] md:h-[60px] lg:h-[70px] bg-[#122b39] rounded-full flex items-center justify-center text-white text-xl lg:text-2xl absolute left-[-33.3px]  sm:left-[-35.5px] md:left-[-38.5px] lg:left-1/2 lg:transform -translate-x-1/2">
               {exp.icon}
             </div>
 
-            {/* Contenu de l'expérience */}
+            {/* Contenu de l'expérience (aligné à droite) */}
             <div
-              className={`bg-white shadow-md p-6 rounded-lg w-1/3 relative ${
+              className={`bg-white shadow-md p-6 rounded-lg w-4/5 lg:w-1/3 ml-auto lg:relative lg:${
                 index % 2 === 0 ? "ml-24" : "mr-24"
               }`}
             >
-              <h3 className="text-lg font-semibold text-gray-700">
+              <h3 className="text-[11px] lg:text-lg sm:text-[14px] md:text-[16px] font-semibold text-gray-700">
                 {exp.date}
               </h3>
-              <p className="text-blue-600 font-bold">{exp.establishment}</p>
-              <p className="text-gray-700">{exp.position}</p>
+              <p className="text-blue-600 font-bold text-[11px] sm:text-[20px] md:text-[22px]">
+                {exp.establishment}
+              </p>
+              <p className="text-gray-700 sm:text-[18px]">{exp.position}</p>
             </div>
           </div>
         ))}
