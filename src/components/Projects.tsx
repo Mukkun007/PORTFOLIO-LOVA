@@ -31,16 +31,16 @@ const Projects = () => {
   const displayedProjects = showAll ? projects : projects.slice(0, 2);
 
   return (
-    <div className="project mt-10">
-      <h1 className="font-bold text-center text-4xl text-white ml-[40px] mr-[40px]">
+    <div className="project mt-2 lg:mt-[4rem]">
+      <h1 className="font-bold text-center text-3xl sm:text-[40px] md:text-[35px] lg:text-[40px] xl:text-3xl 2xl:text-[40px] text-white ml-[40px] mr-[40px]">
         Notable Work
       </h1>
 
-      <div className="flex flex-wrap w-full px-[210px] mt-[10px] gap-8">
+      <div className="flex flex-wrap justify-center xl:justify-normal w-full px-[50px] mt-[20px] gap-[4rem]">
         {displayedProjects.map((project, index) => (
-          <div key={index} className="flex-wrap">
+          <div key={index} className="flex-wrap xl:flex">
             {/* Image à gauche */}
-            <div className="lg:w-1/2">
+            <div className="xl:w-1/2">
               <img
                 src={project.image}
                 alt={project.projectName}
@@ -49,13 +49,17 @@ const Projects = () => {
             </div>
 
             {/* Détails du projet à droite */}
-            <div className="lg:w-1/2 pl-4">
-              <h2 className="text-xl font-light">{project.title}</h2>
-              <h1 className="text-4xl font-bold mt-3">{project.projectName}</h1>
-              <h2 className="text-lg font-light mt-3">
+            <div className="xl:w-1/2 pl-4 xl:pl-[3.5rem] mt-5 xl:mt-0">
+              <h2 className="text-[15px] lg:text-[20px] 2xl:text-[23px] text-left font-light">
+                {project.title}
+              </h2>
+              <h1 className="text-2xl lg:text-3xl 2xl:text-4xl text-[#5ee3bf] font-bold mt-1">
+                {project.projectName}
+              </h1>
+              <h2 className="text-[13px] lg:text-[15px] 2xl:text-[20px] font-light mt-1">
                 {project.establishment}
               </h2>
-              <p className="mt-8">{project.description}</p>
+              <p className="mt-5">{project.description}</p>
 
               {/* ✅ Affichage des technologies */}
               <div className="mt-6 flex flex-wrap gap-2">
