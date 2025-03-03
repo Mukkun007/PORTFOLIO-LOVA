@@ -19,10 +19,10 @@ const Biographie = () => {
         </div>
 
         <div className="w-full lg:w-3/5 p-4">
-          <h2 className="text-center lg:text-left font-bold text-3xl sm:text-[40px] md:text-[35px] lg:text-[40px] xl:text-3xl 2xl:text-[40px]">
+          <h2 className="text-center lg:mt-5 lg:text-left font-bold text-3xl sm:text-[40px] md:text-[35px] lg:text-[40px] xl:text-3xl 2xl:text-[40px]">
             {t("biographie.about")}
           </h2>
-          <h3 className="text-center lg:text-left mt-5 text-xl leading-relaxed text-gray-300">
+          <h3 className="text-center lg:mr-[5rem] lg:text-left mt-5 text-xl leading-relaxed text-gray-300">
             {t("biographie.desc.p1")}
             <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
               {" "}
@@ -47,10 +47,10 @@ const Biographie = () => {
           </h3>
         </div>
         <div className="w-full lg:w-1/5 p-4">
-          <h2 className="text-center lg:text-left font-bold text-3xl">
+          <h2 className="text-center lg:mt-5 lg:text-left font-bold text-3xl sm:text-[40px] md:text-[35px] lg:text-[40px] xl:text-3xl 2xl:text-[40px]">
             {t("biographie.connect")}
           </h2>
-          <div className="reseaux flex justify-center lg:justify-start space-x-4 lg:space-x-3 mt-5">
+          <div className="reseaux flex justify-center lg:justify-start space-x-4 lg:space-x-6 mt-5">
             <a
               href="https://www.instagram.com"
               target="_blank"

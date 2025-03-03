@@ -30,26 +30,26 @@ const Experience = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#0f172a] mt-10">
-      <div className="relative w-2/3">
+      <div className="relative w-2/3 lg:w-1/2">
         {/* Ligne verticale encore plus à gauche */}
-        <div className="absolute left-[-10px] w-1 bg-[#122b39] h-full lg:left-1/2 lg:transform lg:-translate-x-1/2"></div>
+        <div className="absolute left-[-10px] lg:left-1/2 w-1 bg-[#122b39] h-full lg:-translate-x-1/2"></div>
 
         {/* Expériences (cartes alignées à droite) */}
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className={`flex justify-end my-[100px] relative lg:${
-              index % 2 === 0 ? "justify-start" : "justify-end"
-            } lg:my-[150px] lg:relative`}
+            className={`flex ${
+              index % 2 === 0 ? "lg:justify-start" : "lg:justify-end"
+            } justify-end my-[100px] relative lg:my-[150px] lg:relative`}
           >
             {/* Icône directement SUR la timeline */}
-            <div className="w-[50px] sm:w-[55px] md:w-[60px] lg:w-[70px] h-[50px] sm:h-[55px] md:h-[60px] lg:h-[70px] bg-[#122b39] rounded-full flex items-center justify-center text-white text-xl lg:text-2xl absolute left-[-33.3px]  sm:left-[-35.5px] md:left-[-38.5px] lg:left-1/2 lg:transform -translate-x-1/2">
+            <div className="w-[50px] sm:w-[55px] md:w-[60px] lg:w-[70px] h-[50px] sm:h-[55px] md:h-[60px] lg:h-[70px] bg-[#122b39] rounded-full flex items-center justify-center text-white text-xl lg:text-2xl absolute left-[-33.3px]  sm:left-[-33.5px] md:left-[-36.5px] lg:left-1/2 lg:-translate-x-1/2">
               {exp.icon}
             </div>
 
             {/* Contenu de l'expérience (aligné à droite) */}
             <div
-              className={`bg-white shadow-md p-6 rounded-lg w-4/5 lg:w-1/3 ml-auto lg:relative lg:${
+              className={`bg-white shadow-md p-6 rounded-lg w-4/5 lg:w-2/5 ml-auto lg:ml-0 lg:relative lg:${
                 index % 2 === 0 ? "ml-24" : "mr-24"
               }`}
             >
