@@ -31,6 +31,9 @@ const Header = () => {
       } else if (window.scrollY > lastScrollY) {
         setIsScrolled(true);
         setIsOpen(false);
+      } else if (window.scrollY < lastScrollY) {
+        setIsScrolled(true);
+        setIsOpen(false);
       }
       setLastScrollY(window.scrollY);
     };
@@ -45,7 +48,7 @@ const Header = () => {
       {isLargeScreen && isScrolled && !isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed top-5 left-1/2 -translate-x-1/2 w-[100px] h-[30px] bg-[#000000] z-10 rounded-full shadow-lg transition-opacity duration-300"
+          className="fixed top-5 left-1/2 -translate-x-1/2 w-[100px] h-[30px] bg-[#122b39] z-10 rounded-full shadow-lg transition-opacity duration-300"
         >
           <div className="w-[40px] h-[15px]"></div>
         </button>
