@@ -41,20 +41,20 @@ const Header = () => {
 
   return (
     <>
-      <nav className="fixed top-0 lg:top-5 left-0 lg:left-1/2 lg:-translate-x-1/2 w-full lg:w-auto lg:max-w-[900px] lg:h-[80px] lg:z-10 lg:rounded-2xl lg:shadow-md lg:hover:shadow-lg lg:transition-shadow duration-300 bg-[#0f172a] p-4 flex justify-center lg:justify-between items-center h-[60px] z-10 shadow-md">
-        {/* Bouton pour ouvrir/fermer le menu quand il est réduit */}
-        {isLargeScreen && isScrolled && !isOpen && (
-          <button
-            onClick={() => setIsOpen(true)}
-            className="lg:block hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[40px] bg-[#0f172a] rounded-full shadow-lg transition-opacity duration-300"
-          >
-            <div className="w-full h-full"></div>
-          </button>
-        )}
-        {(isOpen || !isScrolled || !isLargeScreen) && (
+      {/* Bouton pour ouvrir/fermer le menu quand il est réduit */}
+      {isLargeScreen && isScrolled && !isOpen && (
+        <button
+          onClick={() => setIsOpen(true)}
+          className="fixed top-5 left-1/2 -translate-x-1/2 w-[100px] h-[30px] bg-[#000000] z-10 rounded-full shadow-lg transition-opacity duration-300"
+        >
+          <div className="w-[40px] h-[15px]"></div>
+        </button>
+      )}
+      {(isOpen || !isScrolled || !isLargeScreen) && (
+        <nav className="fixed top-0 lg:top-5 left-0 lg:left-1/2 lg:-translate-x-1/2 w-full lg:w-auto lg:max-w-[900px] lg:h-[80px] lg:z-10 lg:rounded-2xl lg:shadow-md lg:hover:shadow-lg lg:transition-shadow duration-300 bg-[#0f172a] p-4 flex justify-center lg:justify-between items-center h-[60px] z-10 shadow-md">
           <ul
             className={`flex gap-10 lg:gap-[4rem] xl:gap-10 sm:gap-[4rem] ${
-              isScrolled && !isOpen ? "hidden" : "flex"
+              isLargeScreen && isScrolled && !isOpen ? "hidden" : "flex"
             }  md:gap-[6rem] list-none m-0 p-0 ml-2 mr-2 text-white text-xl xl:text-center`}
           >
             <li>
@@ -137,17 +137,18 @@ const Header = () => {
               </a>
             </li>
           </ul>
-        )}
-        <div className="mr-2">
-          <a
-            href="/CV/Curriculum Vitae - LOVA.pdf"
-            download="Lova_CV"
-            className="text-white font-bold bg-[#122b39] hover:bg-[#5ee3bf] hover:text-white py-2 px-4 rounded-full transition-all duration-300 hidden xl:block"
-          >
-            {t("header.resume")}
-          </a>
-        </div>
-      </nav>
+
+          <div className="mr-2">
+            <a
+              href="/CV/Curriculum Vitae - LOVA.pdf"
+              download="Lova_CV"
+              className="text-white font-bold bg-[#122b39] hover:bg-[#5ee3bf] hover:text-white py-2 px-4 rounded-full transition-all duration-300 hidden xl:block"
+            >
+              {t("header.resume")}
+            </a>
+          </div>
+        </nav>
+      )}
     </>
   );
 };
