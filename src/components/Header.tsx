@@ -8,22 +8,47 @@ const Header = () => {
 
   return (
     <>
-      <nav className="flex justify-between items-center p-4 max-w-4xl mx-auto hidden">
-        <ul className="flex space-x-6">
+      <nav className="fixed top-5 left-1/2 transform -translate-x-1/2 bg-[#0f172a] p-3 md:p-4 flex justify-between items-center w-auto max-w-[900px] h-[80px] z-10 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300">
+        <ul className="flex gap-5 md:gap-6 list-none m-0 p-0">
           <li>
-            <a href="#home">{t("header.home")}</a>
+            <a
+              href="#home"
+              className="text-white text-lg font-light transition-colors duration-300 hover:text-[#00bcd4]"
+            >
+              {t("header.home")}
+            </a>
           </li>
           <li>
-            <a href="#biography">{t("header.about")}</a>
+            <a
+              href="#biography"
+              className="text-white text-lg font-light transition-colors duration-300 hover:text-[#00bcd4]"
+            >
+              {t("header.about")}
+            </a>
           </li>
           <li>
-            <a href="#about">{t("header.skills")}</a>
+            <a
+              href="#about"
+              className="text-white text-lg font-light transition-colors duration-300 hover:text-[#00bcd4]"
+            >
+              {t("header.skills")}
+            </a>
           </li>
           <li>
-            <a href="#experience">{t("header.experiences")}</a>
+            <a
+              href="#experience"
+              className="text-white text-lg font-light transition-colors duration-300 hover:text-[#00bcd4]"
+            >
+              {t("header.experiences")}
+            </a>
           </li>
           <li>
-            <a href="#projects">{t("header.projects")}</a>
+            <a
+              href="#projects"
+              className="text-white text-lg font-light transition-colors duration-300 hover:text-[#00bcd4]"
+            >
+              {t("header.projects")}
+            </a>
           </li>
           <li>
             <a
