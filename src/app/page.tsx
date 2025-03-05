@@ -55,9 +55,9 @@ export default function Page() {
         <div id="projects">
           <Projects />
         </div>
-        <div id="code">
+        {/* <div id="code">
           <Code />
-        </div>
+        </div> */}
         <div>
           <ScrollToTop />
         </div>
