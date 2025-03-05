@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IntlProvider } from "next-intl";
 import CursorLight from "@/components/CursorLight";
 import Header from "@/components/Header";
@@ -12,10 +12,28 @@ import Projects from "@/components/Projects";
 import Code from "@/components/Code";
 import ScrollToTop from "@/components/ScrollToTop";
 import Langue from "@/components/Langue";
+import messages from "../../public/locales/en.json";
 
 export default function Page() {
   const [locale, setLocale] = useState("en"); // Gestion de la langue
-  const messages = require(`../../public/locales/${locale}.json`);
+  // const messages = require(`../../public/locales/${locale}.json`);
+  const [messages, setMessages] = useState<Record<string, string> | null>(null);
+
+  useEffect(() => {
+    async function loadMessages() {
+      try {
+        const messages = await import(`../../public/locales/${locale}.json`);
+        setMessages(messages.default);
+      } catch (error) {
+        console.error("Erreur lors du chargement des messages:", error);
+      }
+    }
+    loadMessages();
+  }, [locale]);
+
+  if (!messages) {
+    return <div>Chargement...</div>; // Afficher un loader pendant le chargement des traductions
+  }
 
   return (
     <IntlProvider locale={locale} messages={messages}>

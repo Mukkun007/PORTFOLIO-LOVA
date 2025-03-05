@@ -3,7 +3,10 @@
 import { useTranslations } from "next-intl";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const About = () => {
   const t = useTranslations();
@@ -60,6 +63,9 @@ const About = () => {
           // Swiper si plus de 2 cartes
           <div className="relative overflow-hidden">
             <Swiper
+              modules={[Navigation, Pagination]}
+              navigation
+              pagination
               spaceBetween={15} // Espace réduit entre les cartes pour voir la suivante
               // slidesPerView={1.2} // Affiche 2 cartes et une partie de la 3e
               grabCursor={true} // Curseur amélioré
