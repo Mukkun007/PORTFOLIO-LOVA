@@ -10,19 +10,17 @@ const Langue = ({
   onChangeLang: (lang: string) => void;
 }) => {
   const toggleLanguage = () => {
-    const newLang = currentLang === "en" ? "fr" : "en"; // Change la langue
+    const newLang = currentLang === "en" ? "fr" : "en";
     onChangeLang(newLang);
   };
 
   return (
     <button
-      className="fixed top-9 right-11 flex items-center gap-2 bg-[#122b39] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#0e2331] transition-colors duration-300 hidden"
+      className="fixed top-9 right-11 text-white font-bold px-4 py-2 rounded-full shadow-lg hover:bg-[#265b6b] transition-colors duration-300 z-10"
       aria-label="Change language"
       onClick={toggleLanguage}
     >
-      {/* Affichage du drapeau correspondant */}
-      <span className="text-xl">{currentLang === "en" ? "🇺🇸" : "🇫🇷"}</span>
-      <span>{currentLang === "en" ? "English" : "Français"}</span>
+      {currentLang.toUpperCase()}
     </button>
   );
 };

@@ -54,7 +54,7 @@ const Header = () => {
         </button>
       )}
       {(isOpen || !isScrolled || !isLargeScreen) && (
-        <nav className="fixed top-0 lg:top-5 left-0 lg:left-1/2 lg:-translate-x-1/2 w-full lg:w-auto lg:max-w-[900px] lg:h-[80px] lg:z-10 lg:rounded-2xl lg:shadow-md lg:hover:shadow-lg lg:transition-shadow duration-300 bg-[#0f172a] p-4 flex justify-center lg:justify-between items-center h-[60px] z-10 shadow-md">
+        <nav className="fixed top-0 lg:top-5 left-0 lg:left-1/2 lg:-translate-x-1/2 w-full lg:w-auto lg:max-w-[900px] lg:h-[80px] lg:z-10 lg:rounded-2xl lg:shadow-md lg:hover:shadow-lg lg:transition-shadow duration-300 bg-[#0f172a] p-4 flex justify-start lg:justify-between items-center h-[60px] z-10 shadow-md">
           <ul
             className={`flex gap-10 lg:gap-[4rem] xl:gap-10 sm:gap-[4rem] ${
               isLargeScreen && isScrolled && !isOpen ? "hidden" : "flex"

@@ -9,10 +9,8 @@ import About from "@/components/About";
 import Biographie from "@/components/Biographie";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
-import Code from "@/components/Code";
 import ScrollToTop from "@/components/ScrollToTop";
 import Langue from "@/components/Langue";
-import messages from "../../public/locales/en.json";
 
 export default function Page() {
   const [locale, setLocale] = useState("en"); // Gestion de la langue
