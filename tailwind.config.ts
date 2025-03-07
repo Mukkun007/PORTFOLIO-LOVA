@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
         scrollBehavior: "smooth",
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],

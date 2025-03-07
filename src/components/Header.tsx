@@ -3,6 +3,15 @@
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 
+import {
+  Home,
+  User,
+  Lightbulb,
+  Briefcase,
+  FolderOpen,
+  Download,
+} from "lucide-react";
+
 const Header = () => {
   const t = useTranslations();
 
@@ -48,13 +57,13 @@ const Header = () => {
       {isLargeScreen && isScrolled && !isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed top-5 left-1/2 -translate-x-1/2 w-[100px] h-[30px] bg-[#122b39] z-10 rounded-full shadow-lg transition-opacity duration-300"
+          className="fixed top-5 left-1/2 -translate-x-1/2 w-[100px] h-[30px] bg-[#0f172a] bg-opacity-90 z-10 rounded-full shadow-xl shadow-black/30 transition-opacity duration-300"
         >
           <div className="w-[40px] h-[15px]"></div>
         </button>
       )}
       {(isOpen || !isScrolled || !isLargeScreen) && (
-        <nav className="fixed top-0 lg:top-5 left-0 lg:left-1/2 lg:-translate-x-1/2 w-full lg:w-auto lg:max-w-[900px] lg:h-[80px] lg:z-10 lg:rounded-2xl lg:shadow-md lg:hover:shadow-lg lg:transition-shadow duration-300 bg-[#0f172a] p-4 flex justify-start lg:justify-between items-center h-[60px] z-10 shadow-md">
+        <nav className="fixed top-0 lg:top-5 left-0 lg:left-1/2 lg:-translate-x-1/2 w-full lg:w-auto lg:max-w-[900px] lg:h-[80px] lg:z-10 lg:rounded-2xl lg:shadow-md lg:hover:shadow-lg lg:transition-shadow duration-300 bg-[#0f172a] bg-opacity-90 p-4 flex justify-center lg:justify-between items-center h-[60px] z-10 shadow-xl shadow-black/30">
           <ul
             className={`flex gap-10 lg:gap-[4rem] xl:gap-10 sm:gap-[4rem] ${
               isLargeScreen && isScrolled && !isOpen ? "hidden" : "flex"
@@ -69,8 +78,9 @@ const Header = () => {
               </a>
               <a
                 href="#home"
-                className="text-white text-lg font-light transition-colors duration-300 hover:text-[#00bcd4] hidden xl:block"
+                className="items-center gap-2 text-white text-lg font-poppins font-semibold transition-colors duration-300 hover:text-[#00bcd4] hidden xl:flex"
               >
+                <Home size={20} className="opacity-70" />
                 {t("header.home")}
               </a>
             </li>
@@ -83,8 +93,9 @@ const Header = () => {
               </a>
               <a
                 href="#biography"
-                className="text-white text-lg font-light transition-colors duration-300 hover:text-[#00bcd4] hidden xl:block"
+                className="items-center gap-2 text-white text-lg font-poppins font-semibold transition-colors duration-300 hover:text-[#00bcd4] hidden xl:flex"
               >
+                <User size={20} className="opacity-70" />
                 {t("header.about")}
               </a>
             </li>
@@ -97,8 +108,9 @@ const Header = () => {
               </a>
               <a
                 href="#about"
-                className="text-white text-lg font-light transition-colors duration-300 hover:text-[#00bcd4] hidden xl:block"
+                className="items-center gap-2 text-white text-lg font-poppins font-semibold transition-colors duration-300 hover:text-[#00bcd4] hidden xl:flex"
               >
+                <Lightbulb size={20} className="opacity-70" />
                 {t("header.skills")}
               </a>
             </li>
@@ -111,8 +123,9 @@ const Header = () => {
               </a>
               <a
                 href="#experience"
-                className="text-white text-lg font-light transition-colors duration-300 hover:text-[#00bcd4] hidden xl:block"
+                className="items-center gap-2 text-white text-lg font-poppins font-semibold transition-colors duration-300 hover:text-[#00bcd4] hidden xl:flex"
               >
+                <Briefcase size={20} className="opacity-70" />
                 {t("header.experiences")}
               </a>
             </li>
@@ -125,8 +138,9 @@ const Header = () => {
               </a>
               <a
                 href="#projects"
-                className="text-white text-lg font-light transition-colors duration-300 hover:text-[#00bcd4] hidden xl:block"
+                className="items-center gap-2 text-white text-lg font-poppins font-semibold transition-colors duration-300 hover:text-[#00bcd4] hidden xl:flex"
               >
+                <FolderOpen size={20} className="opacity-70" />
                 {t("header.projects")}
               </a>
             </li>
