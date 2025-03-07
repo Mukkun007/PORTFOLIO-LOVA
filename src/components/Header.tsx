@@ -32,24 +32,38 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
+    let timeout: NodeJS.Timeout | null = null;
     const handleScroll = () => {
       if (!isLargeScreen) return; // Si ce n'est pas un écran large, on ignore la logique Dynamic Island
 
       if (window.scrollY === 0) {
         setIsScrolled(false);
-      } else if (window.scrollY > lastScrollY) {
-        setIsScrolled(true);
-        setIsOpen(false);
-      } else if (window.scrollY < lastScrollY) {
-        setIsScrolled(true);
-        setIsOpen(false);
+        if (timeout) clearTimeout(timeout);
+        return;
       }
-      setLastScrollY(window.scrollY);
+      if (timeout) clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        setIsScrolled(true);
+        setIsOpen(false);
+      }, 200); // Délai avant disparition
     };
 
+    //   else if (window.scrollY > lastScrollY) {
+    //     setIsScrolled(true);
+    //     setIsOpen(false);
+    //   } else if (window.scrollY < lastScrollY) {
+    //     setIsScrolled(true);
+    //     setIsOpen(false);
+    //   }
+    //   setLastScrollY(window.scrollY);
+    // };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY, isLargeScreen]);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (timeout) clearTimeout(timeout);
+    };
+  }, [isLargeScreen]);
 
   return (
     <>
