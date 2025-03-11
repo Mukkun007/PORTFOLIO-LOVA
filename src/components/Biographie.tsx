@@ -7,7 +7,7 @@ const Biographie = () => {
 
   return (
     <>
-      <div className="biographie flex flex-wrap ml-[40px] 2xl:ml[100px] mr-[40px] 2xl:mr[100px] mt-[6rem] sm:mt-[5rem] md:mt-[6rem] 2xl:ml-[140px] 2xl:mr-[140px] md:justify-center">
+      <div className="biographie flex flex-wrap ml-[40px] 2xl:ml[100px] mr-[40px] 2xl:mr[100px] mt-[2rem] sm:mt-[5rem] md:mt-[6rem] 2xl:ml-[140px] 2xl:mr-[140px] md:justify-center">
         <div className="w-full lg:w-1/5 p-4 flex justify-center items-center">
           <div className="w-[12rem] lg:w-[11rem] xl:w-[12rem] h-[12rem] lg:h-[10rem] xl:h-[12rem] border-4 border-[#122b39] rounded-full overflow-hidden flex justify-center items-center">
             <img
@@ -23,27 +23,6 @@ const Biographie = () => {
             {t("biographie.about")}
           </h2>
           <h3 className="text-center lg:mr-[5rem] lg:text-left mt-5 text-xl leading-relaxed text-gray-300">
-            {/* {t("biographie.desc.p1")}
-            <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
-              {" "}
-              Symfony
-            </span>{" "}
-            {t("biographie.desc.p2")}
-            <span className="font-bold text-white hover:text-[#ff495d] transition-colors duration-300">
-              {" "}
-              {t("biographie.desc.span2")}
-            </span>{" "}
-            {t("biographie.desc.p3")}
-            <span className="font-bold text-white hover:text-[#ff495d] transition-colors duration-300">
-              {" "}
-              React
-            </span>{" "}
-            {t("biographie.desc.p4")}
-            <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
-              {" "}
-              Agile
-            </span>
-            . */}
             {t("biographie.desc.p1")}
             <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
               {" "}
