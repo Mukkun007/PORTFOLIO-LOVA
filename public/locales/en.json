@@ -14,11 +14,17 @@
   "biographie": {
     "about": "About Me",
     "desc": {
-      "p1": "Experienced with",
-      "p2": "in my first professional year, currently focused on",
-      "span2": "UX/UI design",
-      "p3": "and passionate about creating user-friendly experiences while exploring new technologies like",
-      "p4": "and"
+      "p1": "Born in",
+      "in": "in",
+      "p2": "I'm a technology enthusiast living",
+      "p3": "Recently graduated in",
+      "span2": "Engineering",
+      "and": "and",
+      "span3": "Master II ",
+      "en": "in",
+      "span4": "Computer Science",
+      "p4": "from the",
+      "p5": "Fianarantsoa's École Nationale d'Informatique"
     },
     "connect": "Lets Connect"
   },

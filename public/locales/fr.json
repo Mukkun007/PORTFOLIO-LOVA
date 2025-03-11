@@ -14,12 +14,17 @@
   "biographie": {
     "about": "Profil",
     "desc": {
-      "p1": "Expérimenté avec",
-      "in": "a",
-      "p2": "dans ma première année professionnelle, actuellement concentré sur",
-      "span2": "le design UX/UI",
-      "p3": "et passionné par la création d'expériences conviviales tout en explorant de nouvelles technologies comme",
-      "p4": "et"
+      "p1": "Né en",
+      "in": "à ",
+      "p2": "je suis un passionné de technologie vivant",
+      "p3": "Récemment diplômé en",
+      "span2": "Ingénierie",
+      "and": "et",
+      "span3": "Master II ",
+      "en": "en",
+      "span4": "Informatique",
+      "p4": "de",
+      "p5": "l'École Nationale d'Informatique de Fianarantsoa"
     },
     "connect": "Connectons"
   },

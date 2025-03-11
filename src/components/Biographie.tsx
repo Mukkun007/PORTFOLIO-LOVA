@@ -23,7 +23,7 @@ const Biographie = () => {
             {t("biographie.about")}
           </h2>
           <h3 className="text-center lg:mr-[5rem] lg:text-left mt-5 text-xl leading-relaxed text-gray-300">
-            {t("biographie.desc.p1")}
+            {/* {t("biographie.desc.p1")}
             <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
               {" "}
               Symfony
@@ -42,6 +42,47 @@ const Biographie = () => {
             <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
               {" "}
               Agile
+            </span>
+            . */}
+            {t("biographie.desc.p1")}
+            <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
+              {" "}
+              2000
+            </span>{" "}
+            {t("biographie.desc.in")}{" "}
+            <span className="font-bold text-white hover:text-[#ff495d] transition-colors duration-300">
+              {" "}
+              Antananarivo
+            </span>
+            ,{" "}
+            <span className="font-bold text-white hover:text-[#ff495d] transition-colors duration-300">
+              {" "}
+              Madagascar
+            </span>
+            , {t("biographie.desc.p2")} {t("biographie.desc.in")}{" "}
+            <span className="font-bold text-white hover:text-[#ff495d] transition-colors duration-300">
+              {" "}
+              Ambohipo
+            </span>
+            . {t("biographie.desc.p3")}{" "}
+            <span className="font-bold text-white hover:text-[#fdd835] transition-colors duration-300">
+              {" "}
+              {t("biographie.desc.span2")}
+            </span>{" "}
+            {t("biographie.desc.and")}
+            <span className="font-bold text-white hover:text-[#fdd835] transition-colors duration-300">
+              {" "}
+              {t("biographie.desc.span3")}
+            </span>
+            {t("biographie.desc.en")}
+            <span className="font-bold text-white hover:text-[#fdd835] transition-colors duration-300">
+              {" "}
+              {t("biographie.desc.span4")}
+            </span>{" "}
+            {t("biographie.desc.p4")}{" "}
+            <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
+              {" "}
+              {t("biographie.desc.p5")}
             </span>
             .
           </h3>
