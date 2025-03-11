@@ -33,7 +33,7 @@ const About = () => {
     <div className="skills text-center 2xl:mr-[200px] 2xl:ml-[200px] flex flex-wrap ml-[40px] mr-[40px]">
       {/* Partie de gauche */}
       <div
-        className={`w-full lg:w-1/2 p-4 ${cards.length > 2 ? "mt-10" : "mt-5"}`}
+        className={`w-full lg:w-1/2 p-4 ${cards.length > 2 ? "mt-5" : "mt-5"}`}
       >
         <h2 className="font-bold lg:text-left text-3xl sm:text-[40px] md:text-[35px] lg:text-[40px] xl:text-3xl 2xl:text-[40px] lg:mt-[3rem]">
           {t("about.what")}
@@ -44,16 +44,12 @@ const About = () => {
             {" "}
             frontend
           </span>{" "}
-          {t("biographie.desc.p4")}
+          {t("biographie.desc.and")}
           <span className="font-bold text-white hover:text-[#ff495d] transition-colors duration-300">
             {" "}
             backend
           </span>
           , {t("about.desc.p2")}
-          <span className="font-bold text-white hover:text-[#5ee3bf] transition-colors duration-300">
-            {" "}
-            "{t("about.desc.span1")}"
-          </span>
         </h3>
       </div>
 
