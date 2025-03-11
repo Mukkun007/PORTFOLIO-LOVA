@@ -1,6 +1,6 @@
 {
   "home": {
-    "greeting": "Salut, je suis Tahiana Lova, développeur full-stack passionné par le développement web. J’aime concevoir des solutions innovantes et explorer de nouvelles technologies pour améliorer l’expérience utilisateur"
+    "greeting": "Je suis Tahiana Lova, un humain avec quelques compétences en développement web. J'aime créer des solutions innovantes et explorer de nouvelles technologies dans des environnements collaboratifs."
   },
   "header": {
     "home": "Acceuil",
@@ -14,6 +14,7 @@
     "about": "Profil",
     "desc": {
       "p1": "Expérimenté avec",
+      "in": "a",
       "p2": "dans ma première année professionnelle, actuellement concentré sur",
       "span2": "le design UX/UI",
       "p3": "et passionné par la création d'expériences conviviales tout en explorant de nouvelles technologies comme",
