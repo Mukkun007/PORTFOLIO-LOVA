@@ -71,7 +71,9 @@ const Header = () => {
       {isLargeScreen && isScrolled && !isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed top-5 left-1/2 -translate-x-1/2 w-[100px] h-[30px] bg-[#0f172a] bg-opacity-90 z-10 rounded-full shadow-xl shadow-black/30 transition-opacity duration-300"
+          className="fixed top-5 left-1/2 -translate-x-1/2 w-[100px] h-[30px] bg-[#0f172a] bg-opacity-90 z-10 rounded-full 
+                   transition-opacity duration-300 
+                   shadow-[0_0_5px_5px_rgba(0,191,255,0.8)]"
         >
           <div className="w-[40px] h-[15px]"></div>
         </button>
