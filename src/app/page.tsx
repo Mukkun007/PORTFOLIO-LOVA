@@ -35,7 +35,7 @@ export default function Page() {
 
   return (
     <IntlProvider locale={locale} messages={messages}>
-      <div className="page">
+      <div className="page pt-[50px] lg:pt-[100px]">
         <CursorLight />
         <Header />
         <div id="home">

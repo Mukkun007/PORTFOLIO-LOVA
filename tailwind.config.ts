@@ -15,6 +15,9 @@ export default {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        doto: ["Doto", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+        racing: ["Racing Sans One", "sans-serif"],
       },
     },
   },
