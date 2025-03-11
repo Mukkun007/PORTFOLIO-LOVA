@@ -1,6 +1,7 @@
 {
   "home": {
-    "greeting": "Hi, I’m Tahiana Lova, a human with some web development skills. I enjoy creating innovative solutions and exploring new technologies in collaborative environments"
+    "greeting1": "Hi, I’m ",
+    "greeting2": ", a human with some web development skills. I enjoy creating innovative solutions and exploring new technologies in collaborative environments"
   },
   "header": {
     "home": "Home",

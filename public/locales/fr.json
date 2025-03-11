@@ -1,6 +1,7 @@
 {
   "home": {
-    "greeting": "Je suis Tahiana Lova, un humain avec quelques compétences en développement web. J'aime créer des solutions innovantes et explorer de nouvelles technologies dans des environnements collaboratifs."
+    "greeting1": "Je suis ",
+    "greeting2": ", un humain avec quelques compétences en développement web. J'aime créer des solutions innovantes et explorer de nouvelles technologies dans des environnements collaboratifs."
   },
   "header": {
     "home": "Acceuil",

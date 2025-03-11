@@ -69,6 +69,23 @@ const Projects = () => {
             </div>
           </div>
         ))}
+        {projects.length > 2 && (
+          <button
+            className="mt-5 border-2 p-3 rounded-full bg-blue-500 text-white hover:bg-blue-700 flex items-center justify-center transition-all"
+            onClick={() => setShowAll(!showAll)}
+          >
+            <span className="mr-2 text-xl">
+              {showAll ? (
+                <i className="fas fa-chevron-up"></i>
+              ) : (
+                <i className="fas fa-chevron-down"></i>
+              )}
+            </span>
+            <span className="font-semibold">
+              {showAll ? "Show Less" : "See More"}
+            </span>
+          </button>
+        )}
       </div>
     </div>
   );
