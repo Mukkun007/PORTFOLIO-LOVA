@@ -5,37 +5,20 @@ import { useState } from "react";
 const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [status, setStatus] = useState(""); // Pour afficher le statut
+  const [status, setStatus] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setStatus(null);
 
-    if (!email || !message) {
-      setStatus("Veuillez remplir tous les champs.");
-      return;
-    }
+    const res = await fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, message }),
+    });
 
-    try {
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, message }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setStatus("Message envoyé avec succès !");
-        setEmail("");
-        setMessage("");
-      } else {
-        setStatus(data.error || "Une erreur est survenue.");
-      }
-    } catch (error) {
-      setStatus("Erreur lors de l'envoi du message.");
-    }
+    const data = await res.json();
+    setStatus(data.message);
   };
 
   return (
@@ -51,7 +34,7 @@ const Contact = () => {
         </a>{" "}
         ou directement via ce formulaire.
       </p>
-      <div className="bg-[#193747] p-6 w-[35rem] mt-6 rounded-[20px] shadow-lg flex flex-col items-center">
+      <div className="bg-[#193747] p-6 w-[20rem] sm:w-[25rem] md:w-[40rem] lg:w-[45rem] xl:w-[50rem] 2xl:w-[55rem] mt-6 rounded-[20px] shadow-lg flex flex-col items-center">
         <form
           className="w-full flex flex-col items-center"
           onSubmit={handleSubmit}
@@ -61,6 +44,7 @@ const Contact = () => {
             placeholder="Votre adresse e-mail"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
             className="w-full p-3 rounded-md bg-[#0f172a] text-white placeholder-gray-400 focus:ring-2 focus:ring-[#52a8b6]"
           />
           <textarea
@@ -76,7 +60,7 @@ const Contact = () => {
             Envoyer
           </button>
         </form>
-        {status && <p className="mt-4 text-sm text-gray-300">{status}</p>}
+        {status && <p className="mt-4 text-lg text-[#52a8b6]">{status}</p>}
       </div>
     </div>
   );
