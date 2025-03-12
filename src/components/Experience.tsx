@@ -24,7 +24,13 @@ const Experience = () => {
       date: t("experience.date2"),
       establishment: "BAKANTIMO",
       position: t("experience.position2"),
-      icon: <FaBriefcase />,
+      icon: (
+        <img
+          src="/images/bakantimo.png"
+          alt="Bakantimo Logo"
+          className="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px] lg:w-[54px] lg:h-[54px]"
+        />
+      ),
     },
     {
       date: "March 2021 - May 2021",
