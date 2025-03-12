@@ -12,7 +12,13 @@ const Experience = () => {
       date: t("experience.date1"),
       establishment: "Banky Foiben'i Madagasikara",
       position: t("experience.position1"),
-      icon: <FaLaptopCode />,
+      icon: (
+        <img
+          src="/images/bfm-min-v2_0.png"
+          alt="BFM Logo"
+          className="w-[32px] h-[30px] sm:w-[37px] sm:h-[35px] md:w-[40px] md:h-[38px] lg:w-[44px] lg:h-[42px]"
+        />
+      ),
     },
     {
       date: t("experience.date2"),
