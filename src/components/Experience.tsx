@@ -22,8 +22,20 @@ const Experience = () => {
     },
     {
       date: t("experience.date2"),
-      establishment: "BAKANTIMO",
+      establishment: "Ecole Nationale d'Informatique",
       position: t("experience.position2"),
+      icon: (
+        <img
+          src="/images/ENI.png"
+          alt="ENI Logo"
+          className="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px] lg:w-[54px] lg:h-[54px]"
+        />
+      ),
+    },
+    {
+      date: t("experience.date2"),
+      establishment: "BAKANTIMO",
+      position: t("experience.position3"),
       icon: (
         <img
           src="/images/bakantimo.png"
@@ -33,9 +45,21 @@ const Experience = () => {
       ),
     },
     {
-      date: "March 2021 - May 2021",
+      date: "2021",
+      establishment: "Ecole Nationale d'Informatique",
+      position: t("experience.position4"),
+      icon: (
+        <img
+          src="/images/ENI.png"
+          alt="ENI Logo"
+          className="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px] lg:w-[54px] lg:h-[54px]"
+        />
+      ),
+    },
+    {
+      date: "2021",
       establishment: t("experience.etablissement"),
-      position: t("experience.position2"),
+      position: t("experience.position5"),
       icon: (
         <img
           src="/images/MEN.png"

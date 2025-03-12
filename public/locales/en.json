@@ -50,12 +50,15 @@
     }
   },
   "experience": {
-    "date1": "February 2024 - February 2025",
-    "position1": "Service provider",
-    "date2": "July 2023 - October 2023",
-    "position2": "IT trainee",
-    "date3": "March 2021 - May 2021",
-    "etablissement": "Ministry of National Education of Madagasikara"
+    "date1": "2024 - 2025",
+    "position1": "I worked as an IT consultant, focusing on system upgrades and application development. I gained experience in modern web technologies while contributing to key internal projects.",
+    "date2": "2023",
+    "position2": "I obtained my engineering degree and a Master II in general computer science, consolidating my skills in software development and engineering.",
+    "position3": "As an IT intern for 6 months, I strengthened my development and project management skills while working on solutions tailored to the company.",
+    "position4": "I graduated with a degree in computer science, marking a milestone in my academic and professional career.",
+    "date3": "2021",
+    "etablissement": "Ministry of National Education of Madagasikara",
+    "position5": "During my 3-month internship, I gained first-hand experience of development, applying my skills to real-life projects."
   },
   "project": {
     "title1": "Infrastructure Modernization",

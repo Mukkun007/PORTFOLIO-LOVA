@@ -50,12 +50,15 @@
     }
   },
   "experience": {
-    "date1": "Février 2024 - Février 2025",
-    "position1": "Prestataire de services",
+    "date1": "2024 - 2025",
+    "position1": "En tant que consultant informatique, j’ai contribué à la mise à jour des systèmes et au développement d’applications, tout en renforçant mon expertise en technologies web modernes. J’ai collaboré avec des équipes pluridisciplinaires pour optimiser les performances et assurer la maintenabilité des solutions mises en place.",
     "date2": "Juillet 2023 - Octobre 2023",
-    "position2": "Stagiaire en informatique",
-    "date3": "Mars 2021 - mai 2021",
-    "etablissement": "Ministère de l'Education Nationale de Madagasikara"
+    "position2": "J’ai obtenu mon diplôme d’ingénieur et un Master II en informatique générale, consolidant ainsi mes compétences en développement et en ingénierie logicielle.",
+    "position3": "En tant que stagiaire informatique pendant 6 mois, j’ai renforcé mes compétences en développement et gestion de projet tout en travaillant sur des solutions adaptées à l’entreprise.",
+    "position4": "J’ai obtenu ma licence en informatique, marquant une étape clé dans mon parcours académique et professionnel.",
+    "date3": "2021",
+    "etablissement": "Ministère de l'Education Nationale de Madagasikara",
+    "position5": "Pendant 3 mois de stage, j’ai acquis une première expérience concrète en développement, appliquant mes compétences à des projets réels."
   },
   "project": {
     "title1": "Modernisation des infrastructures",
