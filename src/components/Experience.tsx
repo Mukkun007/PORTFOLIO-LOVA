@@ -36,7 +36,13 @@ const Experience = () => {
       date: "March 2021 - May 2021",
       establishment: t("experience.etablissement"),
       position: t("experience.position2"),
-      icon: <FaUniversity />,
+      icon: (
+        <img
+          src="/images/MEN.png"
+          alt="MEN Logo"
+          className="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px] lg:w-[54px] lg:h-[54px]"
+        />
+      ),
     },
   ];
 
