@@ -32,8 +32,13 @@
     "what": "Ce que je fais",
     "desc": {
       "p1": "Concevoir et développer des applications web, à la fois",
-      "p2": "en mettant l'accent sur la propreté du code et l'expérience utilisateur. J’optimise également les technologies existantes pour améliorer la performance, la sécurité et la maintenabilité des plateformes.",
-      "span1": "Voyez comme vous êtes infini"
+      "p2": "en mettant l'accent sur la ",
+      "span1": "propreté du code",
+      "span2": "l'expérience utilisateur.",
+      "p3": " J’optimise également les technologies existantes pour améliorer la ",
+      "span3": " performance, ",
+      "span4": " la sécurité ",
+      "span5": " la maintenabilité des plateformes."
     },
     "card": {
       "title1": "Développement Web",

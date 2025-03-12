@@ -40,16 +40,39 @@ const About = () => {
         </h2>
         <h3 className="text-xl lg:text-left leading-relaxed text-gray-300 mt-5">
           {t("about.desc.p1")}
-          <span className="font-bold text-white hover:text-[#00bcd4] transition-colors duration-300">
+          <span className="font-bold text-white hover:text-[#5ee3bf] transition-colors duration-300">
             {" "}
             frontend
           </span>{" "}
           {t("biographie.desc.and")}
-          <span className="font-bold text-white hover:text-[#ff495d] transition-colors duration-300">
+          <span className="font-bold text-white hover:text-[#5ee3bf] transition-colors duration-300">
             {" "}
             backend
           </span>
           , {t("about.desc.p2")}
+          <span className="font-bold text-white hover:text-[#5ee3bf] transition-colors duration-300">
+            {" "}
+            {t("about.desc.span1")}
+          </span>
+          {t("biographie.desc.and")}
+          <span className="font-bold text-white hover:text-[#5ee3bf] transition-colors duration-300">
+            {" "}
+            {t("about.desc.span2")}
+          </span>
+          {t("about.desc.p3")}
+          <span className="font-bold text-white hover:text-[#5ee3bf] transition-colors duration-300">
+            {" "}
+            {t("about.desc.span3")}
+          </span>
+          <span className="font-bold text-white hover:text-[#5ee3bf] transition-colors duration-300">
+            {" "}
+            {t("about.desc.span4")}
+          </span>
+          {t("biographie.desc.and")}
+          <span className="font-bold text-white hover:text-[#5ee3bf] transition-colors duration-300">
+            {" "}
+            {t("about.desc.span5")}
+          </span>
         </h3>
       </div>
 

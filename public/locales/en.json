@@ -32,8 +32,13 @@
     "what": "What I Do",
     "desc": {
       "p1": "Design, develop and modernize web applications, both",
-      "p2": "focusing on code cleanliness and user experience. I also optimize existing technologies to improve platform performance, security and maintainability.",
-      "span1": "See how infinite you are"
+      "p2": "focusing on code ",
+      "span1": "cleanliness ",
+      "span2": "user experience.",
+      "p3": " I also optimize existing technologies to improve platform ",
+      "span3": " performance, ",
+      "span4": " security ",
+      "span5": " maintainability. "
     },
     "card": {
       "title1": "Web Development",
