@@ -18,6 +18,20 @@ const Contact = () => {
         </a>{" "}
         ou directement via ce formulaire.
       </p>
+      <div className="bg-[#193747] text-white p-6 w-[35rem] h-[40rem] mt-6 rounded-[20px] ml-[2rem] mr-[2rem] shadow-lg flex flex-col items-center">
+        <div className="bg-[#122b39] text-white p-5 w-[33rem] h-[39rem] rounded-[20px] ml-[2rem] mr-[2rem] shadow-lg flex flex-col items-center">
+          <input
+            type="text"
+            placeholder="Votre addresse e-mail"
+            className="w-full p-3 rounded-md bg-[#0f172a] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#52a8b6]"
+          />
+          <input
+            type="text"
+            placeholder="Votre message"
+            className="w-full h-[30rem] p-3 rounded-md bg-[#0f172a] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#52a8b6] mt-[2rem]"
+          />
+        </div>
+      </div>
     </div>
   );
 };
