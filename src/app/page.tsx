@@ -9,6 +9,7 @@ import About from "@/components/About";
 import Biographie from "@/components/Biographie";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import Contacts from "@/components/Contact";
 import ScrollToTop from "@/components/ScrollToTop";
 import Langue from "@/components/Langue";
 
@@ -52,6 +53,9 @@ export default function Page() {
         </div>
         <div id="projects">
           <Projects />
+        </div>
+        <div id="cotacts">
+          <Contacts />
         </div>
         {/* <div id="code">
           <Code />
