@@ -54,7 +54,7 @@ export default function Page() {
         <div id="projects">
           <Projects />
         </div>
-        <div id="cotacts">
+        <div id="contacts">
           <Contacts />
         </div>
         {/* <div id="code">
