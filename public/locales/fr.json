@@ -61,6 +61,7 @@
     "position5": "Pendant 3 mois de stage, j’ai acquis une première expérience concrète en développement, appliquant mes compétences à des projets réels."
   },
   "project": {
+    "notable": "Projets",
     "title1": "Modernisation des infrastructures",
     "project1": "Mise à jour du framework Symfony",
     "desc1": "A dirigé la migration de la plateforme intranet de Banky Foiben'i Madagasikara de Symfony 3.4 à Symfony 6.4, en garantissant de meilleures performances, une sécurité renforcée et une meilleure maintenabilité. Cette mise à niveau a nécessité l'adaptation du code existant, la mise à jour des dépendances et la mise en œuvre des meilleures pratiques afin d'optimiser le système pour une stabilité à long terme",

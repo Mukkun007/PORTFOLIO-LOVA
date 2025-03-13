@@ -31,7 +31,7 @@ const Projects = () => {
   return (
     <div className="project mt-2 lg:mt-[4rem]">
       <h1 className="font-bold text-center text-3xl sm:text-[40px] md:text-[35px] lg:text-[40px] xl:text-3xl 2xl:text-[40px] text-white ml-[40px] mr-[40px]">
-        Notable Work
+        {t("project.notable")}
       </h1>
 
       <div className="flex flex-wrap justify-center xl:justify-normal w-full px-[50px] mt-[20px] gap-[8rem]">
@@ -64,7 +64,7 @@ const Projects = () => {
               >
                 <h2 className="text-lg font-bold">{project.title}</h2>
                 <p className="text-md italic">{project.projectName}</p>
-                <p className="text-sm">{project.description}</p>
+                <p className="text-sm hidden lg:block">{project.description}</p>
               </div>
             </div>
           </div>

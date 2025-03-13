@@ -61,6 +61,7 @@
     "position5": "During my 3-month internship, I gained first-hand experience of development, applying my skills to real-life projects."
   },
   "project": {
+    "notable": "Projects",
     "title1": "Infrastructure Modernization",
     "project1": "Symfony Framework Upgrade",
     "desc1": "Led the migration of Banky Foiben'i Madagasikara's intranet platform from Symfony 3.4 to Symfony 6.4, ensuring better performance, enhanced security, and improved maintainability. This upgrade involved adapting legacy code, updating dependencies, and implementing best practices to optimize the system for long-term stability",
