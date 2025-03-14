@@ -5,9 +5,11 @@ import { useState } from "react";
 const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState<{
+    message: string;
+    type: "success" | "error";
+  } | null>(null);
 
-  // Correction : Ajout du type `React.FormEvent<HTMLFormElement>`
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Empêcher le rechargement de la page
 
@@ -18,7 +20,7 @@ const Contact = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          email: email, // Changer `from` en `email`
+          email: email,
           message: message,
         }),
       });
@@ -26,15 +28,29 @@ const Contact = () => {
       const data = await response.json();
 
       if (response.ok) {
-        setStatus("Email envoyé avec succès !");
+        setStatus({
+          message: "✅ Email envoyé avec succès !",
+          type: "success",
+        });
         setEmail("");
         setMessage("");
       } else {
-        setStatus("Erreur lors de l'envoi : " + data.error);
+        setStatus({
+          message: "❌ Erreur : " + (data.error || "Veuillez réessayer."),
+          type: "error",
+        });
       }
     } catch (error) {
-      setStatus("Erreur de connexion au serveur.");
+      setStatus({
+        message: "❌ Erreur de connexion au serveur.",
+        type: "error",
+      });
     }
+
+    // Effacer le message après 5 secondes
+    setTimeout(() => {
+      setStatus(null);
+    }, 5000);
   };
 
   return (
@@ -77,7 +93,17 @@ const Contact = () => {
             Envoyer
           </button>
         </form>
-        {status && <p className="mt-4 text-lg text-[#52a8b6]">{status}</p>}
+
+        {/* Affichage de la notification */}
+        {status && (
+          <p
+            className={`mt-4 text-lg font-bold ${
+              status.type === "success" ? "text-green-400" : "text-red-400"
+            }`}
+          >
+            {status.message}
+          </p>
+        )}
       </div>
     </div>
   );
