@@ -10,12 +10,6 @@ const Contact = () => {
     "idle" | "success" | "error"
   >("idle");
 
-  // Nouveau state pour gérer la notification
-  const [notification, setNotification] = useState<{
-    message: string;
-    type: "success" | "error";
-  } | null>(null);
-
   const handleSubmit = async (formData: FormData) => {
     setIsSubmitting(true);
     setSubmitStatus("idle");
@@ -27,65 +21,19 @@ const Contact = () => {
         setSubmitStatus("success");
         setEmail("");
         setMessage("");
-
-        // Afficher une notification de succès
-        setNotification({
-          message: "Email envoyé avec succès !",
-          type: "success",
-        });
       } else {
         setSubmitStatus("error");
-
-        // Afficher une notification d'erreur
-        setNotification({
-          message: "Erreur lors de l'envoi de l'email.",
-          type: "error",
-        });
       }
     } catch (error) {
       setSubmitStatus("error");
       console.error("Erreur lors de l'envoi de l'email:", error);
-
-      // Afficher une notification d'erreur
-      setNotification({
-        message: "Une erreur inattendue s'est produite.",
-        type: "error",
-      });
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  // Effet pour faire disparaître la notification après quelques secondes
-  useEffect(() => {
-    if (notification) {
-      const timer = setTimeout(() => {
-        setNotification(null);
-      }, 3000); // La notification disparaît après 3 secondes
-
-      return () => clearTimeout(timer);
-    }
-  }, [notification]);
-
   return (
     <div className="relative flex flex-col justify-center items-center bg-gray-900 text-white text-center mt-[5rem]">
-      {/* Notification */}
-      {notification && (
-        <div
-          className={`
-            fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg transition-all duration-300 
-            ${notification.type === "success" ? "bg-green-600" : "bg-red-600"}
-            transform ${
-              notification
-                ? "translate-x-0 opacity-100"
-                : "translate-x-full opacity-0"
-            }
-          `}
-        >
-          {notification.message}
-        </div>
-      )}
-
       <h1 className="font-bold text-3xl">Contact Me</h1>
       <p className="mt-4 text-lg text-gray-300">
         Vous pouvez me contacter par mail à{" "}
@@ -128,6 +76,15 @@ const Contact = () => {
           >
             {isSubmitting ? "Envoi en cours..." : "Envoyer"}
           </button>
+          {/* Messages de statut sous le bouton */}
+          {submitStatus === "success" && (
+            <p className="mt-2 text-green-500">Email envoyé avec succès !</p>
+          )}
+          {submitStatus === "error" && (
+            <p className="mt-2 text-red-500">
+              Erreur lors de l'envoi de l'email.
+            </p>
+          )}
         </form>
       </div>
     </div>
