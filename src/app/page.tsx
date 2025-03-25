@@ -12,6 +12,7 @@ import Projects from "@/components/Projects";
 import Contacts from "@/components/Contact";
 import ScrollToTop from "@/components/ScrollToTop";
 import Langue from "@/components/Langue";
+import { AppLoader } from "@/components/AppLoader";
 
 export default function Page() {
   const [locale, setLocale] = useState("en"); // Gestion de la langue
@@ -31,7 +32,7 @@ export default function Page() {
   }, [locale]);
 
   if (!messages) {
-    return <div>Chargement...</div>; // Afficher un loader pendant le chargement des traductions
+    return <AppLoader />; // Afficher un loader pendant le chargement des traductions
   }
 
   return (
