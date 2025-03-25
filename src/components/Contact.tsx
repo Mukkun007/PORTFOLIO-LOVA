@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { sendEmail } from "@/app/actions/actions";
 
 const Contact = () => {
