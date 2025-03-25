@@ -2,7 +2,6 @@
 
 import { useTranslations } from "next-intl";
 import React from "react";
-import { FaBriefcase, FaUniversity, FaLaptopCode } from "react-icons/fa";
 
 const Experience = () => {
   const t = useTranslations();

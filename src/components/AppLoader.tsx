@@ -4,7 +4,7 @@ interface AppLoaderProps {
   text?: string;
 }
 
-export const AppLoader = ({ text = "Tahiana Lova" }: AppLoaderProps) => {
+export const AppLoader = ({ text = "Loading..." }: AppLoaderProps) => {
   return (
     <div className="fixed inset-0 z-[9999] bg-[#0f172a] flex flex-col items-center justify-center space-y-6">
       <div className="relative">
