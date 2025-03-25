@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { IntlProvider } from "next-intl";
+import { motion } from "framer-motion";
 import CursorLight from "@/components/CursorLight";
 import Header from "@/components/Header";
 import Home from "@/components/Home";
@@ -15,8 +16,7 @@ import Langue from "@/components/Langue";
 import { AppLoader } from "@/components/AppLoader";
 
 export default function Page() {
-  const [locale, setLocale] = useState("en"); // Gestion de la langue
-  // const messages = require(`../../public/locales/${locale}.json`);
+  const [locale, setLocale] = useState("en");
   const [messages, setMessages] = useState<Record<string, string> | null>(null);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function Page() {
   }, [locale]);
 
   if (!messages) {
-    return <AppLoader />; // Afficher un loader pendant le chargement des traductions
+    return <AppLoader />;
   }
 
   return (
@@ -40,27 +40,68 @@ export default function Page() {
       <div className="page pt-[50px] lg:pt-[100px]">
         <CursorLight />
         <Header />
-        <div id="home">
+
+        {/* Animation au scroll pour chaque section */}
+        <motion.div
+          id="home"
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: true }} // Animation déclenchée une seule fois
+        >
           <Home />
-        </div>
-        <div id="biography">
+        </motion.div>
+
+        <motion.div
+          id="biography"
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           <Biographie />
-        </div>
-        <div id="about">
+        </motion.div>
+
+        <motion.div
+          id="about"
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
           <About />
-        </div>
-        <div id="experience">
+        </motion.div>
+
+        <motion.div
+          id="experience"
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
           <Experience />
-        </div>
-        <div id="projects">
+        </motion.div>
+
+        <motion.div
+          id="projects"
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
           <Projects />
-        </div>
-        <div id="contacts">
+        </motion.div>
+
+        <motion.div
+          id="contacts"
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
           <Contacts />
-        </div>
-        {/* <div id="code">
-          <Code />
-        </div> */}
+        </motion.div>
+
         <div>
           <ScrollToTop />
         </div>
