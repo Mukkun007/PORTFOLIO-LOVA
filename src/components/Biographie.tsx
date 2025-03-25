@@ -65,6 +65,15 @@ const Biographie = () => {
             </span>
             .
           </h3>
+          <div className="flex justify-center w-full lg:justify-start mt-5">
+            <a
+              href="/CV/Curriculum Vitae - LOVA.pdf"
+              download="Lova_CV"
+              className="text-white text-xl font-bold bg-[#122b39] hover:bg-[#5ee3bf] hover:text-white py-2 px-4 rounded-full transition-all duration-300 md:hidden"
+            >
+              {t("header.resume")}
+            </a>
+          </div>
         </div>
         <div className="w-full lg:w-1/5 p-4">
           <h2 className="text-center lg:mt-5 lg:text-left font-bold text-3xl sm:text-[40px] md:text-[35px] lg:text-[40px] xl:text-3xl 2xl:text-[40px]">

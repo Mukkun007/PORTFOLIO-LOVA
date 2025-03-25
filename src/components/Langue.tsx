@@ -16,7 +16,7 @@ const Langue = ({
 
   return (
     <button
-      className="absolute lg:fixed top-3 lg:top-9 right-[1rem] text-white font-light px-4 py-2 rounded-full shadow-lg hover:bg-[#265b6b] transition-colors duration-300 z-10"
+      className="fixed lg:fixed top-3 lg:top-9 right-[1rem] text-white font-light px-4 py-2 rounded-full shadow-lg hover:bg-[#265b6b] transition-colors duration-300 z-10"
       aria-label="Change language"
       onClick={toggleLanguage}
     >

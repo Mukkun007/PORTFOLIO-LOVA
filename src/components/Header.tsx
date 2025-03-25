@@ -164,7 +164,7 @@ const Header = () => {
               <a
                 href="/CV/Curriculum Vitae - LOVA.pdf"
                 download="Lova_CV"
-                className="transition-colors duration-300 hover:text-[#00bcd4] block hidden"
+                className="transition-colors duration-300 hover:text-[#00bcd4] md:block xl:hidden hidden"
               >
                 <i className="fas fa-download"></i>
               </a>
