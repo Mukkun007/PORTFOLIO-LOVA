@@ -9,7 +9,7 @@ import {
   Lightbulb,
   Briefcase,
   FolderOpen,
-  Download,
+  // Download,
 } from "lucide-react";
 
 const Header = () => {
@@ -17,7 +17,7 @@ const Header = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  // const [lastScrollY, setLastScrollY] = useState(0);
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {

@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Press_Start_2P } from "next/font/google";
 
 const Home = () => {
   const t = useTranslations(); // Hook pour récupérer les traductions
