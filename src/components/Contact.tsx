@@ -82,7 +82,7 @@ const Contact = () => {
           )}
           {submitStatus === "error" && (
             <p className="mt-2 text-red-500">
-              Erreur lors de l'envoi de l'email.
+              Erreur lors de l&apos;envoi de l&apos;email.
             </p>
           )}
         </form>
