@@ -30,7 +30,7 @@ const About = () => {
   ];
 
   return (
-    <div className="skills text-center 2xl:mr-[200px] 2xl:ml-[200px] flex flex-wrap ml-[40px] mr-[40px]">
+    <div className="skills bg-[#0f172a] text-center 2xl:mr-[200px] 2xl:ml-[200px] flex flex-wrap ml-[40px] mr-[40px]">
       {/* Partie de gauche */}
       <div
         className={`w-full lg:w-1/2 p-4 ${cards.length > 2 ? "mt-5" : "mt-5"}`}

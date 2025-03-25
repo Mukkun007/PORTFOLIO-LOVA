@@ -29,7 +29,7 @@ const Projects = () => {
   const displayedProjects = showAll ? projects : projects.slice(0, 2);
 
   return (
-    <div className="project mt-2 lg:mt-[4rem]">
+    <div className="project bg-[#0f172a] mt-2 lg:mt-[4rem]">
       <h1 className="font-bold text-center text-3xl sm:text-[40px] md:text-[35px] lg:text-[40px] xl:text-3xl 2xl:text-[40px] text-white ml-[40px] mr-[40px]">
         {t("project.notable")}
       </h1>
