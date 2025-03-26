@@ -68,5 +68,10 @@
     "title2": "Développement d'applications web",
     "project2": "Application d'optimisation des processus internes",
     "desc2": "Développement d'une application mobile multiplateforme pour le commerce électronique, améliorant l'expérience d'achat grâce à une interface conviviale et à des performances optimisées pour les appareils Android et iOS."
+  },
+  "contacts": {
+    "title": "Contacter Moi",
+    "p1": "Vous pouvez me contacter par mail à",
+    "p2": "ou directement via ce formulaire."
   }
 }

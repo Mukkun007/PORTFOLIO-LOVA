@@ -68,5 +68,10 @@
     "title2": "Web Application Development",
     "project2": "Internal Process Optimization Application",
     "desc2": "Developed a cross-platform mobile app for e-commerce, enhancing the shopping experience with a user-friendly interface and optimized performance for both Android and iOS devices"
+  },
+  "contacts": {
+    "title": "Contact Me",
+    "p1": "You can mail me at",
+    "p2": "or directly via this form"
   }
 }

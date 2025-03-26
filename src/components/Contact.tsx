@@ -1,8 +1,10 @@
 "use client";
 import { useState } from "react";
 import { sendEmail } from "@/app/actions/actions";
+import { useTranslations } from "next-intl";
 
 const Contact = () => {
+  const t = useTranslations();
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -34,16 +36,16 @@ const Contact = () => {
 
   return (
     <div className="relative flex flex-col justify-center items-center bg-gray-900 text-white text-center mt-[5rem]">
-      <h1 className="font-bold text-3xl">Contact Me</h1>
+      <h1 className="font-bold text-3xl">{t("contacts.title")}</h1>
       <p className="mt-4 text-lg text-gray-300">
-        Vous pouvez me contacter par mail à{" "}
+        {t("contacts.p1")}{" "}
         <a
           href="mailto:fitahianalova@gmail.com"
           className="text-[#52a8b6] font-bold"
         >
           fitahianalova@gmail.com
         </a>{" "}
-        ou directement via ce formulaire.
+        {t("contacts.p2")}
       </p>
       <div className="bg-[#193747] p-6 w-[20rem] sm:w-[25rem] md:w-[40rem] lg:w-[45rem] xl:w-[50rem] 2xl:w-[55rem] mt-6 rounded-[20px] shadow-lg flex flex-col items-center">
         <form
