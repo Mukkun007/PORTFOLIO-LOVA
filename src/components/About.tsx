@@ -35,7 +35,7 @@ const About = () => {
       <div
         className={`w-full lg:w-1/2 p-4 ${cards.length > 2 ? "mt-5" : "mt-5"}`}
       >
-        <h2 className="font-bold lg:text-left text-3xl sm:text-[40px] md:text-[35px] lg:text-[40px] xl:text-3xl 2xl:text-[40px] lg:mt-[3rem]">
+        <h2 className="font-bold text-white lg:text-left text-3xl sm:text-[40px] md:text-[35px] lg:text-[40px] xl:text-3xl 2xl:text-[40px] lg:mt-[3rem]">
           {t("about.what")}
         </h2>
         <h3 className="text-xl lg:text-left leading-relaxed text-gray-300 mt-5">
