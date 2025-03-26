@@ -76,7 +76,7 @@ const Biographie = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/5 p-4">
-          <h2 className="text-center lg:mt-5 lg:text-left font-bold text-3xl sm:text-[40px] md:text-[35px] lg:text-[40px] xl:text-3xl 2xl:text-[40px]">
+          <h2 className="text-center text-white lg:mt-5 lg:text-left font-bold text-3xl sm:text-[40px] md:text-[35px] lg:text-[40px] xl:text-3xl 2xl:text-[40px]">
             {t("biographie.connect")}
           </h2>
           <div className="reseaux flex justify-center lg:justify-start space-x-4 lg:space-x-6 mt-5">
