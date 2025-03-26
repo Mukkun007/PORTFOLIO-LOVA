@@ -68,7 +68,7 @@ main {
 
 .desc {
   flex: 0 0 100%; /* 80% de la largeur pour la section de gauche */
-  background: var(--background);
+  /* background: var(--background); */
   display: block;
   justify-content: start;
   align-items: start;
