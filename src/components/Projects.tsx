@@ -38,7 +38,7 @@ const Projects = () => {
         {displayedProjects.map((project, index) => (
           <div
             key={index}
-            className="group flex justify-center items-center w-full"
+            className="group flex justify-center items-center w-full rounded-[2.5rem] overflow-hidden"
           >
             <div className="relative">
               {/* Image */}
@@ -58,7 +58,7 @@ const Projects = () => {
 
               {/* Informations en bas (cachées par défaut et animées au hover) */}
               <div
-                className="absolute bottom-0 left-0 right-0 w-full text-black p-4 backdrop-blur-lg rounded-bl-[2rem] rounded-br-[2rem] 
+                className="absolute bottom-0 left-0 right-0 w-full h-[9.5rem] text-black p-4 backdrop-blur-lg rounded-bl-[2rem] rounded-br-[2rem] 
               bg-gradient-to-t from-black/55 to-transparent opacity-0 translate-y-4 transition-all duration-500 ease-in-out 
               group-hover:opacity-100 group-hover:translate-y-0"
               >
