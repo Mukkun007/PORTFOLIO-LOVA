@@ -68,7 +68,10 @@
     "desc1": "Led the migration of Banky Foiben'i Madagasikara's intranet platform from Symfony 3.4 to Symfony 6.4, ensuring better performance, enhanced security, and improved maintainability. This upgrade involved adapting legacy code, updating dependencies, and implementing best practices to optimize the system for long-term stability",
     "title2": "Web Application Development",
     "project2": "Internal Process Optimization Application",
-    "desc2": "Developed a cross-platform mobile app for e-commerce, enhancing the shopping experience with a user-friendly interface and optimized performance for both Android and iOS devices"
+    "desc2": "Developed a cross-platform mobile app for e-commerce, enhancing the shopping experience with a user-friendly interface and optimized performance for both Android and iOS devices",
+    "title3": "Visioconférence",
+    "project3": "Visioconférence",
+    "desc3": "A modern video conferencing app with video calls 📹, screen sharing 🖥️, and real-time chat 💬 for seamless and interactive collaboration."
   },
   "contacts": {
     "title": "Contact Me",

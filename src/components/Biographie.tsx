@@ -81,7 +81,7 @@ const Biographie = () => {
           </h2>
           <div className="reseaux flex justify-center lg:justify-start space-x-4 lg:space-x-6 mt-5">
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/mukkun_0/"
               target="_blank"
               rel="noopener noreferrer"
             >

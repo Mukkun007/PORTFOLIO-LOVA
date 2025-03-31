@@ -21,7 +21,15 @@ const Projects = () => {
       establishment: "Banky Foiben’ny Madagasikara",
       projectName: t("project.project2"),
       description: t("project.desc2"),
-      tech: ["React Native", "Node.js", "MongoDB"],
+      tech: ["Symfony 6.4", "PHP", "Doctrine", "MySQL"],
+    },
+    {
+      image: "/images/visio.png",
+      title: t("project.title3"),
+      establishment: "",
+      projectName: t("project.project3"),
+      description: t("project.desc3"),
+      tech: ["ExpressJs", "Node.js", "Webrtc"],
     },
   ];
 
