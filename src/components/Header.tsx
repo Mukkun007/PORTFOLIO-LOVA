@@ -162,7 +162,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="/CV/Curriculum Vitae - LOVA.pdf"
+                href="/CV/CVLOVA.pdf"
                 download="Lova_CV"
                 className="transition-colors duration-300 hover:text-[#00bcd4] md:block xl:hidden hidden"
               >
