@@ -71,7 +71,9 @@
     "desc2": "Developed a cross-platform mobile app for e-commerce, enhancing the shopping experience with a user-friendly interface and optimized performance for both Android and iOS devices",
     "title3": "Visioconférence",
     "project3": "Visioconférence",
-    "desc3": "A modern video conferencing app with video calls 📹, screen sharing 🖥️, and real-time chat 💬 for seamless and interactive collaboration."
+    "desc3": "A modern video conferencing app with video calls 📹, screen sharing 🖥️, and real-time chat 💬 for seamless and interactive collaboration.",
+    "seemore": "Show More",
+    "seeless": "Show Less"
   },
   "contacts": {
     "title": "Contact Me",

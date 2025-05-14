@@ -1,10 +1,35 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+const useBreakpoint = () => {
+  const [breakpoint, setBreakpoint] = useState<"mobile" | "lg" | "desktop">(
+    "desktop"
+  );
+
+  const updateBreakpoint = () => {
+    if (window.innerWidth < 1024) {
+      setBreakpoint("mobile");
+    } else if (window.innerWidth < 1280) {
+      setBreakpoint("lg");
+    } else {
+      setBreakpoint("desktop");
+    }
+  };
+
+  useEffect(() => {
+    updateBreakpoint();
+    window.addEventListener("resize", updateBreakpoint);
+    return () => window.removeEventListener("resize", updateBreakpoint);
+  }, []);
+
+  return breakpoint;
+};
 
 const Projects = () => {
   const t = useTranslations();
+  const breakpoint = useBreakpoint();
 
   const projects = [
     {
@@ -14,6 +39,7 @@ const Projects = () => {
       projectName: t("project.project1"),
       description: t("project.desc1"),
       tech: ["Symfony 6.4", "PHP", "Doctrine", "MySQL"],
+      links: { github: "", website: "" },
     },
     {
       image: "/images/DOR.png",
@@ -22,6 +48,7 @@ const Projects = () => {
       projectName: t("project.project2"),
       description: t("project.desc2"),
       tech: ["Symfony 6.4", "PHP", "Doctrine", "MySQL"],
+      links: { github: "", website: "" },
     },
     {
       image: "/images/visio.png",
@@ -30,71 +57,96 @@ const Projects = () => {
       projectName: t("project.project3"),
       description: t("project.desc3"),
       tech: ["ExpressJs", "Node.js", "Webrtc"],
+      links: { github: "", website: "" },
     },
   ];
 
+  // Définir les limites d'affichage selon la taille de l’écran
+  const displayLimit = {
+    mobile: 2,
+    lg: 6,
+    desktop: 6,
+  };
+
+  const limit = displayLimit[breakpoint];
   const [showAll, setShowAll] = useState(false);
-  const displayedProjects = showAll ? projects : projects.slice(0, 2);
+  const displayedProjects = showAll ? projects : projects.slice(0, limit);
+
+  const shouldShowButton = projects.length > limit;
 
   return (
-    <div className="project bg-[#0f172a] mt-2 lg:mt-[4rem]">
-      <h1 className="font-bold text-center text-3xl sm:text-[40px] md:text-[35px] lg:text-[40px] xl:text-3xl 2xl:text-[40px] text-white ml-[40px] mr-[40px]">
+    <div className="bg-[#0f172a] py-16 px-6">
+      <h1 className="text-white text-4xl font-bold text-center mb-12">
         {t("project.notable")}
       </h1>
 
-      <div className="flex flex-wrap justify-center xl:justify-normal w-full px-[50px] mt-[20px] gap-[8rem]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         {displayedProjects.map((project, index) => (
           <div
             key={index}
-            className="group flex justify-center items-center w-full rounded-[2.5rem] overflow-hidden"
+            className="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform transform hover:scale-105"
           >
-            <div className="relative">
-              {/* Image */}
+            <div className="relative h-48 overflow-hidden">
               <img
                 src={project.image}
                 alt={project.projectName}
-                className="w-auto max-w-full h-auto max-h-[500px] object-contain"
+                className="object-cover w-full h-full"
               />
 
-              {/* Établissement en haut à droite (caché par défaut) */}
-              <div
-                className="absolute top-2 right-4 bg-transparent text-black font-bold text-sm px-3 py-1 rounded 
-              opacity-0 translate-y-2 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0"
-              >
-                {project.establishment}
+              {/* Masque flouté en bas */}
+              <div className="absolute inset-x-0 bottom-0 h-16 bg-white backdrop-blur-sm [mask-image:linear-gradient(to_top,white,transparent)]" />
+            </div>
+            <div className="p-5 flex flex-col justify-between h-[300px]">
+              <div>
+                <h2 className="text-xl font-bold text-gray-800">
+                  {project.title}
+                </h2>
+                <p className="text-sm text-gray-600 italic">
+                  {project.projectName}
+                </p>
+                <p className="mt-3 text-sm text-gray-700">
+                  {project.description}
+                </p>
               </div>
-
-              {/* Informations en bas (cachées par défaut et animées au hover) */}
-              <div
-                className="absolute bottom-0 left-0 right-0 w-full h-[9.5rem] text-black p-4 backdrop-blur-lg rounded-bl-[2rem] rounded-br-[2rem] 
-              bg-gradient-to-t from-black/55 to-transparent opacity-0 translate-y-4 transition-all duration-500 ease-in-out 
-              group-hover:opacity-100 group-hover:translate-y-0"
-              >
-                <h2 className="text-lg font-bold">{project.title}</h2>
-                <p className="text-md italic">{project.projectName}</p>
-                <p className="text-sm hidden lg:block">{project.description}</p>
+              <div className="mt-4">
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex mt-4 space-x-4 text-gray-500">
+                  {project.links.website && (
+                    <a href={project.links.website} target="_blank">
+                      🌐
+                    </a>
+                  )}
+                  {project.links.github && (
+                    <a href={project.links.github} target="_blank">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </div>
         ))}
-        {projects.length > 2 && (
-          <button
-            className="mt-5 border-2 p-3 rounded-full bg-blue-500 text-white hover:bg-blue-700 flex items-center justify-center transition-all"
-            onClick={() => setShowAll(!showAll)}
-          >
-            <span className="mr-2 text-xl">
-              {showAll ? (
-                <i className="fas fa-chevron-up"></i>
-              ) : (
-                <i className="fas fa-chevron-down"></i>
-              )}
-            </span>
-            <span className="font-semibold">
-              {showAll ? "Show Less" : "See More"}
-            </span>
-          </button>
-        )}
       </div>
+
+      {shouldShowButton && (
+        <div className="flex justify-center mt-10">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full text-lg font-semibold transition"
+          >
+            {showAll ? t("project.seeless") : t("project.seemore")}
+          </button>
+        </div>
+      )}
     </div>
   );
 };

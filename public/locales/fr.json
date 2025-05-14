@@ -71,7 +71,9 @@
     "desc2": "Développement d'une application mobile multiplateforme pour le commerce électronique, améliorant l'expérience d'achat grâce à une interface conviviale et à des performances optimisées pour les appareils Android et iOS.",
     "title3": "Visioconférence",
     "project3": "Visioconférence",
-    "desc3": "Une application de visioconférence moderne offrant appel vidéo 📹, partage d’écran 🖥️ et chat en temps réel 💬 pour une collaboration fluide et interactive."
+    "desc3": "Une application de visioconférence moderne offrant appel vidéo 📹, partage d’écran 🖥️ et chat en temps réel 💬 pour une collaboration fluide et interactive.",
+    "seemore": "Voir plus",
+    "seeless": "Voir moins"
   },
   "contacts": {
     "title": "Contacter Moi",
