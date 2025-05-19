@@ -59,6 +59,33 @@ const Projects = () => {
       tech: ["ExpressJs", "Node.js", "Webrtc"],
       links: { github: "", website: "" },
     },
+    {
+      image: "/images/visio.png",
+      title: t("project.title3"),
+      establishment: "",
+      projectName: t("project.project3"),
+      description: t("project.desc3"),
+      tech: ["ExpressJs", "Node.js", "Webrtc"],
+      links: { github: "", website: "" },
+    },
+    {
+      image: "/images/visio.png",
+      title: t("project.title3"),
+      establishment: "",
+      projectName: t("project.project3"),
+      description: t("project.desc3"),
+      tech: ["ExpressJs", "Node.js", "Webrtc"],
+      links: { github: "", website: "" },
+    },
+    {
+      image: "/images/visio.png",
+      title: t("project.title3"),
+      establishment: "",
+      projectName: t("project.project3"),
+      description: t("project.desc3"),
+      tech: ["ExpressJs", "Node.js", "Webrtc"],
+      links: { github: "", website: "" },
+    },
   ];
 
   const [hoveredProjectIndex, setHoveredProjectIndex] = useState<number | null>(
@@ -68,7 +95,7 @@ const Projects = () => {
     hoveredProjectIndex !== null ? projects[hoveredProjectIndex] : null;
 
   return (
-    <div className="bg-[#0f172a] py-16 px-6 min-h-screen mb-[-15rem]">
+    <div className="bg-[#0f172a] py-16 px-6 min-h-screen mb-[-10rem]">
       <h1 className="text-white text-4xl font-bold text-center mb-12">
         {t("project.notable")}
       </h1>
@@ -77,7 +104,7 @@ const Projects = () => {
         {/* Gauche : Image du projet survolé */}
         <div className="flex-1 flex justify-center items-center hidden lg:block">
           {hoveredProject && (
-            <div className="w-full ml-[10rem] xl:ml-[20rem] 2xl:ml-[30rem] max-w-md h-[30rem] rounded-xl overflow-hidden shadow-lg bg-transparent transition-opacity duration-300">
+            <div className="w-full ml-[10rem] xl:ml-[20rem] 2xl:ml-[30rem] max-w-md h-[40rem] rounded-tr-xl overflow-hidden shadow-lg bg-transparent transition-opacity duration-300">
               <img
                 src={hoveredProject.image}
                 alt={hoveredProject.projectName}
@@ -90,7 +117,7 @@ const Projects = () => {
 
         {/* Droite : Liste des projets */}
         <div className="flex-1 text-white">
-          <ul className="space-y-6">
+          <ul className="space-y-6 max-h-[40rem] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
             {projects.map((project, index) => (
               <li
                 key={index}
