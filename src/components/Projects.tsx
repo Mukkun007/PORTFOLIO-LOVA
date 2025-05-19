@@ -59,33 +59,6 @@ const Projects = () => {
       tech: ["ExpressJs", "Node.js", "Webrtc"],
       links: { github: "", website: "" },
     },
-    {
-      image: "/images/visio.png",
-      title: t("project.title3"),
-      establishment: "",
-      projectName: t("project.project3"),
-      description: t("project.desc3"),
-      tech: ["ExpressJs", "Node.js", "Webrtc"],
-      links: { github: "", website: "" },
-    },
-    {
-      image: "/images/visio.png",
-      title: t("project.title3"),
-      establishment: "",
-      projectName: t("project.project3"),
-      description: t("project.desc3"),
-      tech: ["ExpressJs", "Node.js", "Webrtc"],
-      links: { github: "", website: "" },
-    },
-    {
-      image: "/images/visio.png",
-      title: t("project.title3"),
-      establishment: "",
-      projectName: t("project.project3"),
-      description: t("project.desc3"),
-      tech: ["ExpressJs", "Node.js", "Webrtc"],
-      links: { github: "", website: "" },
-    },
   ];
 
   const [hoveredProjectIndex, setHoveredProjectIndex] = useState<number | null>(
