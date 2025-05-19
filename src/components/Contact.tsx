@@ -35,7 +35,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="relative flex flex-col justify-center items-center bg-gray-900 text-white text-center mt-[5rem]">
+    <div className="relative flex flex-col justify-center items-center bg-gray-900 text-white text-center">
       <h1 className="font-bold text-3xl">{t("contacts.title")}</h1>
       <p className="mt-4 text-lg text-gray-300">
         {t("contacts.p1")}{" "}

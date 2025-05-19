@@ -61,92 +61,53 @@ const Projects = () => {
     },
   ];
 
-  // Définir les limites d'affichage selon la taille de l’écran
-  const displayLimit = {
-    mobile: 2,
-    lg: 6,
-    desktop: 6,
-  };
-
-  const limit = displayLimit[breakpoint];
-  const [showAll, setShowAll] = useState(false);
-  const displayedProjects = showAll ? projects : projects.slice(0, limit);
-
-  const shouldShowButton = projects.length > limit;
+  const [hoveredProjectIndex, setHoveredProjectIndex] = useState<number | null>(
+    null
+  );
+  const hoveredProject =
+    hoveredProjectIndex !== null ? projects[hoveredProjectIndex] : null;
 
   return (
-    <div className="bg-[#0f172a] py-16 px-6">
+    <div className="bg-[#0f172a] py-16 px-6 min-h-screen mb-[-15rem]">
       <h1 className="text-white text-4xl font-bold text-center mb-12">
         {t("project.notable")}
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-        {displayedProjects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform transform hover:scale-105"
-          >
-            <div className="relative h-48 overflow-hidden">
+      <div className="flex flex-col lg:flex-row gap-12">
+        {/* Gauche : Image du projet survolé */}
+        <div className="flex-1 flex justify-center items-center hidden lg:block">
+          {hoveredProject && (
+            <div className="w-full ml-[10rem] xl:ml-[20rem] 2xl:ml-[30rem] max-w-md h-[30rem] rounded-xl overflow-hidden shadow-lg bg-transparent transition-opacity duration-300">
               <img
-                src={project.image}
-                alt={project.projectName}
-                className="object-cover w-full h-full"
+                src={hoveredProject.image}
+                alt={hoveredProject.projectName}
+                className="object-cover w-full h-full opacity-0 animate-fade-in"
+                style={{ objectPosition: "top right" }}
               />
-
-              {/* Masque flouté en bas */}
-              <div className="absolute inset-x-0 bottom-0 h-16 bg-white backdrop-blur-sm [mask-image:linear-gradient(to_top,white,transparent)]" />
             </div>
-            <div className="p-5 flex flex-col justify-between h-[300px]">
-              <div>
-                <h2 className="text-xl font-bold text-gray-800">
-                  {project.title}
-                </h2>
-                <p className="text-sm text-gray-600 italic">
-                  {project.projectName}
-                </p>
-                <p className="mt-3 text-sm text-gray-700">
-                  {project.description}
-                </p>
-              </div>
-              <div className="mt-4">
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech, i) => (
-                    <span
-                      key={i}
-                      className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex mt-4 space-x-4 text-gray-500">
-                  {project.links.website && (
-                    <a href={project.links.website} target="_blank">
-                      🌐
-                    </a>
-                  )}
-                  {project.links.github && (
-                    <a href={project.links.github} target="_blank">
-                      <i className="fab fa-github"></i>
-                    </a>
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {shouldShowButton && (
-        <div className="flex justify-center mt-10">
-          <button
-            onClick={() => setShowAll(!showAll)}
-            className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full text-lg font-semibold transition"
-          >
-            {showAll ? t("project.seeless") : t("project.seemore")}
-          </button>
+          )}
         </div>
-      )}
+
+        {/* Droite : Liste des projets */}
+        <div className="flex-1 text-white">
+          <ul className="space-y-6">
+            {projects.map((project, index) => (
+              <li
+                key={index}
+                onMouseEnter={() => setHoveredProjectIndex(index)}
+                onMouseLeave={() => setHoveredProjectIndex(null)}
+                className="cursor-pointer p-4 rounded-lg transition-all duration-300 transform hover:translate-x-2 hover:scale-105"
+              >
+                <h2 className="text-2xl font-semibold">{project.title}</h2>
+                <p className="text-sm italic">{project.projectName}</p>
+                {index < projects.length - 1 && (
+                  <hr className="border-t border-gray-600 w-full mt-4" />
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
