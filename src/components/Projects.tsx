@@ -59,6 +59,15 @@ const Projects = () => {
       tech: ["ExpressJs", "Node.js", "Webrtc"],
       links: { github: "", website: "" },
     },
+    {
+      image: "/images/CV-generator.png",
+      title: t("project.title4"),
+      establishment: "",
+      projectName: t("project.project4"),
+      description: t("project.desc4"),
+      tech: ["VueJS", "TailwindCSS"],
+      links: { github: "", website: "" },
+    },
   ];
 
   const [hoveredProjectIndex, setHoveredProjectIndex] = useState<number | null>(

@@ -70,8 +70,11 @@
     "project2": "Application d'optimisation des processus internes",
     "desc2": "Développement d'une application mobile multiplateforme pour le commerce électronique, améliorant l'expérience d'achat grâce à une interface conviviale et à des performances optimisées pour les appareils Android et iOS.",
     "title3": "Visioconférence",
-    "project3": "Visioconférence",
+    "project3": "Une application de visioconférence moderne offrant appel vidéo 📹, partage d’écran 🖥️ et chat en temps réel 💬 pour une collaboration fluide et interactive.",
     "desc3": "Une application de visioconférence moderne offrant appel vidéo 📹, partage d’écran 🖥️ et chat en temps réel 💬 pour une collaboration fluide et interactive.",
+    "title4": "CV-Generator",
+    "project4": "C'est une application React permettant de créer, prévisualiser et télécharger un CV personnalisé en PDF en temps réel.",
+    "desc4": "A CV generator that allows users to create professional resumes in PDF format. Users can customize their CVs with various templates and styles, making it easy to showcase their skills and experiences.",
     "seemore": "Voir plus",
     "seeless": "Voir moins"
   },
