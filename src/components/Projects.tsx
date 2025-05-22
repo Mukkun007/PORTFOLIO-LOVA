@@ -3,10 +3,10 @@
 import { useTranslations } from "next-intl";
 import { useState, useEffect } from "react";
 
-const useBreakpoint = () => {
-  const [breakpoint, setBreakpoint] = useState<"mobile" | "lg" | "desktop">(
-    "desktop"
-  );
+type Breakpoint = "mobile" | "lg" | "desktop";
+
+const useBreakpoint = (): Breakpoint => {
+  const [breakpoint, setBreakpoint] = useState<Breakpoint>("desktop");
 
   const updateBreakpoint = () => {
     if (window.innerWidth < 1024) {
@@ -29,7 +29,7 @@ const useBreakpoint = () => {
 
 const Projects = () => {
   const t = useTranslations();
-  // const breakpoint = useBreakpoint();
+  const breakpoint = useBreakpoint();
 
   const projects = [
     {
@@ -60,7 +60,6 @@ const Projects = () => {
       links: { github: "", website: "" },
     },
     {
-      // image: "/images/CVLogo.png",
       image: "/images/CV-generator.png",
       title: t("project.title4"),
       establishment: "",
@@ -71,12 +70,7 @@ const Projects = () => {
     },
   ];
 
-  // const [hoveredProjectIndex, setHoveredProjectIndex] = useState<number | null>(
-  //   null
-  // );
-  // const hoveredProject =
-  //   hoveredProjectIndex !== null ? projects[hoveredProjectIndex] : null;
-  const displayLimit = {
+  const displayLimit: Record<Breakpoint, number> = {
     mobile: 2,
     lg: 6,
     desktop: 6,
@@ -115,9 +109,6 @@ const Projects = () => {
                 <h2 className="text-xl font-bold text-gray-800">
                   {project.title}
                 </h2>
-                {/* <p className="text-sm text-gray-600 italic">
-                  {project.projectName}
-                </p> */}
                 <p className="mt-3 text-sm text-gray-700">
                   {project.description}
                 </p>
@@ -135,12 +126,20 @@ const Projects = () => {
                 </div>
                 <div className="flex mt-4 space-x-4 text-gray-500">
                   {project.links.website && (
-                    <a href={project.links.website} target="_blank">
+                    <a
+                      href={project.links.website}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       🌐
                     </a>
                   )}
                   {project.links.github && (
-                    <a href={project.links.github} target="_blank">
+                    <a
+                      href={project.links.github}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <i className="fab fa-github"></i>
                     </a>
                   )}
