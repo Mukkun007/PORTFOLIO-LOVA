@@ -29,7 +29,7 @@ const useBreakpoint = () => {
 
 const Projects = () => {
   const t = useTranslations();
-  const breakpoint = useBreakpoint();
+  // const breakpoint = useBreakpoint();
 
   const projects = [
     {
@@ -60,6 +60,7 @@ const Projects = () => {
       links: { github: "", website: "" },
     },
     {
+      // image: "/images/CVLogo.png",
       image: "/images/CV-generator.png",
       title: t("project.title4"),
       establishment: "",
