@@ -4,9 +4,8 @@ import { useTranslations } from "next-intl";
 import { useState, useEffect } from "react";
 
 const useBreakpoint = () => {
-  const [breakpoint, setBreakpoint] = useState<"mobile" | "lg" | "desktop">(
-    "desktop"
-  );
+  const [breakpoint, setBreakpoint] =
+    (useState < "mobile") | "lg" | ("desktop" > "desktop");
 
   const updateBreakpoint = () => {
     if (window.innerWidth < 1024) {
@@ -29,7 +28,7 @@ const useBreakpoint = () => {
 
 const Projects = () => {
   const t = useTranslations();
-  // const breakpoint = useBreakpoint();
+  const breakpoint = useBreakpoint();
 
   const projects = [
     {
@@ -59,23 +58,9 @@ const Projects = () => {
       tech: ["ExpressJs", "Node.js", "Webrtc"],
       links: { github: "", website: "" },
     },
-    {
-      // image: "/images/CVLogo.png",
-      image: "/images/CV-generator.png",
-      title: t("project.title4"),
-      establishment: "",
-      projectName: t("project.project4"),
-      description: t("project.desc4"),
-      tech: ["VueJS", "TailwindCSS"],
-      links: { github: "", website: "" },
-    },
   ];
 
-  // const [hoveredProjectIndex, setHoveredProjectIndex] = useState<number | null>(
-  //   null
-  // );
-  // const hoveredProject =
-  //   hoveredProjectIndex !== null ? projects[hoveredProjectIndex] : null;
+  // Définir les limites d'affichage selon la taille de l’écran
   const displayLimit = {
     mobile: 2,
     lg: 6,
@@ -115,9 +100,9 @@ const Projects = () => {
                 <h2 className="text-xl font-bold text-gray-800">
                   {project.title}
                 </h2>
-                {/* <p className="text-sm text-gray-600 italic">
+                <p className="text-sm text-gray-600 italic">
                   {project.projectName}
-                </p> */}
+                </p>
                 <p className="mt-3 text-sm text-gray-700">
                   {project.description}
                 </p>
