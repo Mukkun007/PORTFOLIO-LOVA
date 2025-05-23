@@ -75,6 +75,9 @@
     "title4": "CV-Generator",
     "project4": "C'est une application React permettant de créer, prévisualiser et télécharger un CV personnalisé en PDF en temps réel.",
     "desc4": "C'est une application React permettant de créer, prévisualiser et télécharger un CV personnalisé en PDF en temps réel.",
+    "title5": "Star Wars Lore",
+    "project5": "Application React qui répertorie tous les films, séries et animations de l’univers Star Wars dans leur ordre chronologique. Elle permet aux fans de suivre facilement la saga complète, de la prélogie aux dernières productions, avec des fiches détaillées pour chaque œuvre.",
+    "desc5": "Application React qui répertorie tous les films, séries et animations de l’univers Star Wars dans leur ordre chronologique. Elle permet aux fans de suivre facilement la saga complète, de la prélogie aux dernières productions, avec des fiches détaillées pour chaque œuvre.",
     "seemore": "Voir plus",
     "seeless": "Voir moins"
   },

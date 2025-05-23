@@ -68,6 +68,15 @@ const Projects = () => {
       tech: ["VueJS", "TailwindCSS"],
       links: { github: "", website: "" },
     },
+    {
+      image: "/images/star wars lore.png",
+      title: t("project.title5"),
+      establishment: "",
+      projectName: t("project.project5"),
+      description: t("project.desc5"),
+      tech: ["ReactJS"],
+      links: { github: "", website: "" },
+    },
   ];
 
   const displayLimit: Record<Breakpoint, number> = {
