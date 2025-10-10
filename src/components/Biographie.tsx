@@ -67,7 +67,7 @@ const Biographie = () => {
           </h3>
           <div className="flex justify-center w-full lg:justify-start mt-5">
             <a
-              href="/CV/Curriculum Vitae - LOVA.pdf"
+              href="/CV/CVLOVA.pdf"
               download="Lova_CV"
               className="text-white text-xl font-bold bg-[#122b39] hover:bg-[#5ee3bf] hover:text-white py-2 px-4 rounded-full transition-all duration-300 md:hidden"
             >

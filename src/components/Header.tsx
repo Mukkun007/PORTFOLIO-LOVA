@@ -173,7 +173,7 @@ const Header = () => {
 
           <div className="mr-2">
             <a
-              href="/CV/Curriculum Vitae - LOVA.pdf"
+              href="/CV/CVLOVA.pdf"
               download="Lova_CV"
               className="text-white font-bold bg-[#122b39] hover:bg-[#5ee3bf] hover:text-white py-2 px-4 rounded-full transition-all duration-300 hidden xl:block"
             >
