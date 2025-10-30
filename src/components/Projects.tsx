@@ -77,6 +77,15 @@ const Projects = () => {
       tech: ["ReactJS"],
       links: { github: "", website: "" },
     },
+    {
+      image: "/images/Tims's assistant.png",
+      title: t("project.title6"),
+      establishment: "",
+      projectName: t("project.project6"),
+      description: t("project.desc6"),
+      tech: ["ReactJS, Python, FastAPI, OpenAI API", "Cursor"],
+      links: { github: "", website: "" },
+    },
   ];
 
   const displayLimit: Record<Breakpoint, number> = {

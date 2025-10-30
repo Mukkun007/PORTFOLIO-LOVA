@@ -80,6 +80,9 @@
     "title5": "Star Wars Lore",
     "project5": "React application that lists all the films, series and animations in the Star Wars universe in chronological order. It allows fans to easily follow the entire saga, from the prelogy to the latest productions, with detailed fact sheets for each work.",
     "desc5": "React application that lists all the films, series and animations in the Star Wars universe in chronological order. It allows fans to easily follow the entire saga, from the prelogy to the latest productions, with detailed fact sheets for each work.",
+    "title6": "Tims's assistant",
+    "project6": "Web-based educational assistance application integrating AI to help students with their studies. It allows users to upload academic documents, analyze them automatically, and generate personalized quizzes, summaries, learning roadmaps, and a conversational assistant to answer questions about the content.",
+    "desc6": "Web-based educational assistance application integrating AI to help students with their studies. It allows users to upload academic documents, analyze them automatically, and generate personalized quizzes, summaries, learning roadmaps, and a conversational assistant to answer questions about the content.",
     "seemore": "Show More",
     "seeless": "Show Less"
   },
