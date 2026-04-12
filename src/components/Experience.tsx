@@ -8,6 +8,18 @@ const Experience = () => {
 
   const experiences = [
     {
+      date: t("experience.datePulse"),
+      establishment: "Pulse",
+      position: t("experience.positionPulse"),
+      icon: (
+        <img
+          src="/images/Pulse.png"
+          alt="Pulse Logo"
+          className="w-[32px] h-[30px] sm:w-[37px] sm:h-[35px] md:w-[40px] md:h-[38px] lg:w-[44px] lg:h-[42px]"
+        />
+      ),
+    },
+    {
       date: t("experience.dateMaki"),
       establishment: "Maki Office",
       position: t("experience.positionMaki"),

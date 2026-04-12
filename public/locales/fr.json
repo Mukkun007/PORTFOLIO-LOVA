@@ -60,8 +60,10 @@
     "date3": "2021",
     "etablissement": "Ministère de l'Education Nationale de Madagasikara",
     "position5": "Pendant 3 mois de stage, j’ai acquis une première expérience concrète en développement, appliquant mes compétences à des projets réels.",
-    "dateMaki": "Fevrier 2025 - Présent",
-    "positionMaki": "En tant que développeur backend chez Maki Office, je suis responsable de la mise en place des solutions techniques nécessaires à la création et à l’évolution des plateformes web de l’entreprise. J’assure le développement des fonctionnalités côté backend, tout en veillant à la performance, à la sécurité et à la fiabilité des systèmes."
+    "dateMaki": "Fevrier 2025 - Janvier 2026",
+    "positionMaki": "En tant que développeur backend chez Maki Office, je suis responsable de la mise en place des solutions techniques nécessaires à la création et à l’évolution des plateformes web de l’entreprise. J’assure le développement des fonctionnalités côté backend, tout en veillant à la performance, à la sécurité et à la fiabilité des systèmes.",
+    "datePulse": "Janvier 2026 - Présent",
+    "positionPulse": "En tant qu'Ingénieur d'Étude et de Développement spécialisé en développement web backend, j'interviens sur la conception et la réalisation de solutions techniques robustes en PHP et Symfony. Je participe à l'analyse des besoins métier, à la modélisation des architectures applicatives et au développement des fonctionnalités backend, tout en garantissant la qualité, la sécurité et la maintenabilité du code produit."
   },
   "project": {
     "notable": "Projets",
