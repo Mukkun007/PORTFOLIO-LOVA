@@ -1,10 +1,10 @@
 {
   "home": {
     "greeting1": "Je suis ",
-    "greeting2": ", un humain avec quelques compétences en développement web. J'aime créer des solutions innovantes et explorer de nouvelles technologies dans des environnements collaboratifs."
+    "greeting2": ", un développeur backend spécialisé en Symfony & Node.js. Je conçois des applications web robustes et scalables, et j'aime transformer des besoins métier complexes en code propre et maintenable."
   },
   "header": {
-    "home": "Acceuil",
+    "home": "Accueil",
     "about": "Profil",
     "skills": "Compétences",
     "experiences": "Experiences",
@@ -45,8 +45,8 @@
       "desc1": "Développer des applications web performantes et évolutives en optimisant le code",
       "title2": "Conception de projet",
       "desc2": "Concevoir des projets qui allient créativité et fonctionnalité pour une expérience utilisateur optimale",
-      "title3": "Développeur UI/UX",
-      "desc3": "Créer des interfaces intuitives et attrayantes pour améliorer l'expérience utilisateur"
+      "title3": "API & Architecture Backend",
+      "desc3": "Conception et implémentation d'APIs REST, optimisation des requêtes base de données, et garantie de la sécurité et fiabilité des systèmes côté serveur."
     }
   },
   "experience": {
@@ -54,6 +54,7 @@
     "date1": "2024 - 2025",
     "position1": "En tant que consultant informatique, j’ai contribué à la mise à jour des systèmes et au développement d’applications, tout en renforçant mon expertise en technologies web modernes. J’ai collaboré avec des équipes pluridisciplinaires pour optimiser les performances et assurer la maintenabilité des solutions mises en place.",
     "date2": "Juillet 2023 - Octobre 2023",
+    "dateBakantimo": "Juillet 2023 - Octobre 2023",
     "position2": "J’ai obtenu mon diplôme d’ingénieur et un Master II en informatique générale, consolidant ainsi mes compétences en développement et en ingénierie logicielle.",
     "position3": "En tant que stagiaire informatique pendant 6 mois, j’ai renforcé mes compétences en développement et gestion de projet tout en travaillant sur des solutions adaptées à l’entreprise.",
     "position4": "J’ai obtenu ma licence en informatique, marquant une étape clé dans mon parcours académique et professionnel.",
@@ -72,7 +73,7 @@
     "desc1": "A dirigé la migration de la plateforme intranet de Banky Foiben'i Madagasikara de Symfony 3.4 à Symfony 6.4, en garantissant de meilleures performances, une sécurité renforcée et une meilleure maintenabilité. Cette mise à niveau a nécessité l'adaptation du code existant, la mise à jour des dépendances et la mise en œuvre des meilleures pratiques afin d'optimiser le système pour une stabilité à long terme",
     "title2": "Développement d'applications web",
     "project2": "Application d'optimisation des processus internes",
-    "desc2": "Développement d'une application mobile multiplateforme pour le commerce électronique, améliorant l'expérience d'achat grâce à une interface conviviale et à des performances optimisées pour les appareils Android et iOS.",
+    "desc2": "Développement d'une plateforme web pour la Banky Foiben'i Madagasikara permettant de gérer les précommandes pour la vente d'une pièce en or commémorative, offrant aux clients la possibilité d'enregistrer leurs commandes en ligne.",
     "title3": "Visioconférence",
     "project3": "Une application de visioconférence moderne offrant appel vidéo 📹, partage d’écran 🖥️ et chat en temps réel 💬 pour une collaboration fluide et interactive.",
     "desc3": "Une application de visioconférence moderne offrant appel vidéo 📹, partage d’écran 🖥️ et chat en temps réel 💬 pour une collaboration fluide et interactive.",
@@ -91,6 +92,12 @@
   "contacts": {
     "title": "Contacter Moi",
     "p1": "Vous pouvez me contacter par mail à",
-    "p2": "ou directement via ce formulaire."
+    "p2": "ou directement via ce formulaire.",
+    "email_placeholder": "Votre adresse e-mail",
+    "message_placeholder": "Votre message",
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "success": "Email envoyé avec succès !",
+    "error": "Erreur lors de l'envoi de l'email."
   }
 }

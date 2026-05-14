@@ -1,7 +1,7 @@
 {
   "home": {
     "greeting1": "Hi, I’m ",
-    "greeting2": ", a human with some web development skills. I enjoy creating innovative solutions and exploring new technologies in collaborative environments"
+    "greeting2": ", a Backend Developer specialized in Symfony & Node.js. I build robust, scalable web applications and enjoy turning complex business needs into clean, maintainable code."
   },
   "header": {
     "home": "Home",
@@ -45,8 +45,8 @@
       "desc1": "Develop high-performance,\n scalable web applications by optimizing code",
       "title2": "Project Design",
       "desc2": "Design projects that combine creativity and functionality for an optimal user experience",
-      "title3": "UI/UX Developer",
-      "desc3": "Create intuitive and visually appealing user interfaces that enhance user experience"
+      "title3": "API & Backend Architecture",
+      "desc3": "Design and implement REST APIs, optimize database queries, and ensure the security and reliability of server-side systems."
     }
   },
   "experience": {
@@ -54,6 +54,7 @@
     "date1": "2024 - 2025",
     "position1": "I worked as an IT consultant, focusing on system upgrades and application development. I gained experience in modern web technologies while contributing to key internal projects.",
     "date2": "2023",
+    "dateBakantimo": "2023",
     "position2": "I obtained my engineering degree and a Master II in general computer science, consolidating my skills in software development and engineering.",
     "position3": "As an IT intern for 6 months, I strengthened my development and project management skills while working on solutions tailored to the company.",
     "position4": "I graduated with a degree in computer science, marking a milestone in my academic and professional career.",
@@ -72,7 +73,7 @@
     "desc1": "Led the migration of Banky Foiben'i Madagasikara's intranet platform from Symfony 3.4 to Symfony 6.4, ensuring better performance, enhanced security, and improved maintainability. This upgrade involved adapting legacy code, updating dependencies, and implementing best practices to optimize the system for long-term stability",
     "title2": "Web Application Development",
     "project2": "Internal Process Optimization Application",
-    "desc2": "Developed a cross-platform mobile app for e-commerce, enhancing the shopping experience with a user-friendly interface and optimized performance for both Android and iOS devices",
+    "desc2": "Developed a web platform for Banky Foiben'i Madagasikara to manage pre-orders for the sale of a commemorative gold coin, enabling customers to register their orders online.",
     "title3": "Visioconférence",
     "project3": "A modern video conferencing app with video calls 📹, screen sharing 🖥️, and real-time chat 💬 for seamless and interactive collaboration.",
     "desc3": "A modern video conferencing app with video calls 📹, screen sharing 🖥️, and real-time chat 💬 for seamless and interactive collaboration.",
@@ -91,6 +92,12 @@
   "contacts": {
     "title": "Contact Me",
     "p1": "You can mail me at",
-    "p2": "or directly via this form"
+    "p2": "or directly via this form",
+    "email_placeholder": "Your email address",
+    "message_placeholder": "Your message",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Email sent successfully!",
+    "error": "An error occurred while sending the email."
   }
 }
