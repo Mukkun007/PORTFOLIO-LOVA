@@ -54,16 +54,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  flex-direction: column; /* Permet de placer le navbar en haut et le contenu en dessous */
-  height: 30vh;
+  flex-direction: column;
 }
 
 main {
-  display: flex; /* Flexbox pour diviser le contenu en 2 */
+  display: flex;
   flex: 1;
-  height: calc(
-    45vh - 60px
-  ); /* S'assure que le contenu occupe toute la hauteur restante après le navbar */
 }
 
 .desc {
