@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 interface AppLoaderProps {
   text?: string;
 }
@@ -8,10 +10,12 @@ export const AppLoader = ({ text = "Loading" }: AppLoaderProps) => {
   return (
     <div className="fixed inset-0 z-[9999] bg-[#0f172a] flex flex-col items-center justify-center space-y-6">
       {/* Image du Loader */}
-      <img
+      <Image
         src="/images/ICONE.png"
         alt="Loading"
-        className="w-20 h-20 animate-spin"
+        width={80}
+        height={80}
+        className="animate-spin"
       />
 
       {/* Texte "Loading..." avec animation des points */}

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import React from "react";
 
@@ -12,9 +13,11 @@ const Experience = () => {
       establishment: "Pulse",
       position: t("experience.positionPulse"),
       icon: (
-        <img
+        <Image
           src="/images/Pulse.png"
           alt="Pulse Logo"
+          width={44}
+          height={42}
           className="w-[32px] h-[30px] sm:w-[37px] sm:h-[35px] md:w-[40px] md:h-[38px] lg:w-[44px] lg:h-[42px]"
         />
       ),
@@ -24,9 +27,11 @@ const Experience = () => {
       establishment: "Maki Office",
       position: t("experience.positionMaki"),
       icon: (
-        <img
+        <Image
           src="/images/maki.png"
           alt="maki Logo"
+          width={44}
+          height={42}
           className="w-[32px] h-[30px] sm:w-[37px] sm:h-[35px] md:w-[40px] md:h-[38px] lg:w-[44px] lg:h-[42px]"
         />
       ),
@@ -36,9 +41,11 @@ const Experience = () => {
       establishment: "Banky Foiben'i Madagasikara",
       position: t("experience.position1"),
       icon: (
-        <img
+        <Image
           src="/images/bfm-min-v2_0.png"
           alt="BFM Logo"
+          width={44}
+          height={42}
           className="w-[32px] h-[30px] sm:w-[37px] sm:h-[35px] md:w-[40px] md:h-[38px] lg:w-[44px] lg:h-[42px]"
         />
       ),
@@ -48,21 +55,25 @@ const Experience = () => {
       establishment: "Ecole Nationale d'Informatique",
       position: t("experience.position2"),
       icon: (
-        <img
+        <Image
           src="/images/ENI.png"
           alt="ENI Logo"
+          width={54}
+          height={54}
           className="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px] lg:w-[54px] lg:h-[54px]"
         />
       ),
     },
     {
-      date: t("experience.date2"),
+      date: t("experience.dateBakantimo"),
       establishment: "BAKANTIMO",
       position: t("experience.position3"),
       icon: (
-        <img
+        <Image
           src="/images/bakantimo.png"
           alt="Bakantimo Logo"
+          width={54}
+          height={54}
           className="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px] lg:w-[54px] lg:h-[54px]"
         />
       ),
@@ -72,9 +83,11 @@ const Experience = () => {
       establishment: "Ecole Nationale d'Informatique",
       position: t("experience.position4"),
       icon: (
-        <img
+        <Image
           src="/images/ENI.png"
           alt="ENI Logo"
+          width={54}
+          height={54}
           className="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px] lg:w-[54px] lg:h-[54px]"
         />
       ),
@@ -84,9 +97,11 @@ const Experience = () => {
       establishment: t("experience.etablissement"),
       position: t("experience.position5"),
       icon: (
-        <img
+        <Image
           src="/images/MEN.png"
           alt="MEN Logo"
+          width={54}
+          height={54}
           className="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px] lg:w-[54px] lg:h-[54px]"
         />
       ),
@@ -100,7 +115,7 @@ const Experience = () => {
           {t("experience.title")}
         </h1>
       </div>
-      <div className="flex justify-center items-center min-h-screen bg-[#0f172a] mt-10">
+      <div className="flex justify-center items-center bg-[#0f172a] mt-10">
         <div className="relative w-2/3 lg:w-1/2">
           {/* Ligne verticale encore plus à gauche */}
           <div className="absolute left-[-10px] lg:left-1/2 w-1 bg-[#122b39] h-full lg:-translate-x-1/2"></div>

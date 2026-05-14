@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useState, useEffect } from "react";
 
@@ -113,9 +114,11 @@ const Projects = () => {
             className="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform transform hover:scale-105"
           >
             <div className="relative h-48 overflow-hidden">
-              <img
+              <Image
                 src={project.image}
                 alt={project.projectName}
+                width={400}
+                height={192}
                 className="object-cover w-full h-full"
               />
 
