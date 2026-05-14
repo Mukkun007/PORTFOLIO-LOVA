@@ -24,9 +24,19 @@ export default function PageContent({
   initialLocale,
   initialMessages,
 }: PageContentProps) {
-  const [locale, setLocale] = useState(initialLocale);
+  const [locale, setLocale] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("locale") || initialLocale;
+    }
+    return initialLocale;
+  });
   const [messages, setMessages] =
     useState<AbstractIntlMessages>(initialMessages);
+
+  useEffect(() => {
+    document.documentElement.lang = locale;
+    localStorage.setItem("locale", locale);
+  }, [locale]);
 
   useEffect(() => {
     if (locale === initialLocale) return;
@@ -39,7 +49,7 @@ export default function PageContent({
       }
     }
     loadMessages();
-  }, [locale]);
+  }, [locale, initialLocale]);
 
   return (
     <IntlProvider locale={locale} messages={messages}>

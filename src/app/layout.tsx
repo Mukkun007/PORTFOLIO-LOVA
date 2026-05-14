@@ -13,8 +13,35 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tahiana Lova | Portfolio",
-  description: "Portfolio of Tahiana Lova",
+  metadataBase: new URL("https://portfolio-lova.vercel.app"),
+  title: "Tahiana Lova — Backend Developer | Symfony & Node.js",
+  description:
+    "Ingénieur backend basé à Madagascar, spécialisé en Symfony et Node.js. Disponible pour des missions freelance internationales sur Malt et Upwork.",
+  keywords: [
+    "backend developer",
+    "Symfony",
+    "Node.js",
+    "PHP",
+    "freelance",
+    "Madagascar",
+    "Tahiana Lova",
+  ],
+  openGraph: {
+    title: "Tahiana Lova — Backend Developer | Symfony & Node.js",
+    description:
+      "Ingénieur backend spécialisé en Symfony et Node.js, disponible pour des missions freelance internationales.",
+    url: "https://portfolio-lova.vercel.app",
+    siteName: "Portfolio Tahiana Lova",
+    locale: "fr_FR",
+    alternateLocale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Tahiana Lova — Backend Developer | Symfony & Node.js",
+    description:
+      "Ingénieur backend spécialisé en Symfony et Node.js, disponible pour des missions freelance.",
+  },
 };
 
 export default function RootLayout({
@@ -25,10 +52,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"

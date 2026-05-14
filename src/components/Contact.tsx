@@ -55,7 +55,7 @@ const Contact = () => {
           <input
             type="email"
             name="email"
-            placeholder="Votre adresse e-mail"
+            placeholder={t("contacts.email_placeholder")}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -63,7 +63,7 @@ const Contact = () => {
           />
           <textarea
             name="message"
-            placeholder="Votre message"
+            placeholder={t("contacts.message_placeholder")}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
@@ -76,16 +76,13 @@ const Contact = () => {
               isSubmitting ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >
-            {isSubmitting ? "Envoi en cours..." : "Envoyer"}
+            {isSubmitting ? t("contacts.sending") : t("contacts.send")}
           </button>
-          {/* Messages de statut sous le bouton */}
           {submitStatus === "success" && (
-            <p className="mt-2 text-green-500">Email envoyé avec succès !</p>
+            <p className="mt-2 text-green-500">{t("contacts.success")}</p>
           )}
           {submitStatus === "error" && (
-            <p className="mt-2 text-red-500">
-              Erreur lors de l&apos;envoi de l&apos;email.
-            </p>
+            <p className="mt-2 text-red-500">{t("contacts.error")}</p>
           )}
         </form>
       </div>
