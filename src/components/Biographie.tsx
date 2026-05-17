@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import AvailabilityDot from "@/components/AvailabilityDot";
 
 const Biographie = () => {
   const t = useTranslations();
@@ -10,14 +11,19 @@ const Biographie = () => {
     <>
       <div className="biographie bg-[#0f172a] flex flex-wrap ml-[40px] 2xl:ml[100px] mr-[40px] 2xl:mr[100px] mt-[5rem] sm:mt-[5rem] md:mt-[6rem] 2xl:ml-[140px] 2xl:mr-[140px] md:justify-center">
         <div className="w-full lg:w-1/5 p-4 flex justify-center items-center">
-          <div className="w-[12rem] lg:w-[11rem] xl:w-[12rem] h-[12rem] lg:h-[11rem] xl:h-[12rem] border-4 border-[#122b39] rounded-full overflow-hidden flex justify-center items-center">
-            <Image
-              src="/images/Image Lova.jpg"
-              alt="Profile"
-              width={192}
-              height={192}
-              className="w-full h-full object-cover"
-            />
+          <div className="relative w-[12rem] lg:w-[11rem] xl:w-[12rem] h-[12rem] lg:h-[11rem] xl:h-[12rem]">
+            <div className="w-full h-full border-4 border-[#122b39] rounded-full overflow-hidden flex justify-center items-center">
+              <Image
+                src="/images/Image Lova.jpg"
+                alt="Profile"
+                width={192}
+                height={192}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="absolute bottom-1 right-1 z-10">
+              <AvailabilityDot size="large" withTooltip={true} />
+            </div>
           </div>
         </div>
 

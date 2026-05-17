@@ -89,6 +89,14 @@
     "seemore": "Voir plus",
     "seeless": "Voir moins"
   },
+  "availability": {
+    "available": "Disponible pour des missions freelance",
+    "hours": "5-10h / semaine",
+    "location": "Basé à Madagascar (GMT+3) — Compatible avec les horaires de travail européens",
+    "cta": "Me contacter",
+    "short": "Disponible",
+    "tooltipLocation": "Madagascar (GMT+3)"
+  },
   "contacts": {
     "title": "Contacter Moi",
     "p1": "Vous pouvez me contacter par mail à",
