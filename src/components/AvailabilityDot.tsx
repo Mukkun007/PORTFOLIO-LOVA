@@ -43,7 +43,7 @@ const AvailabilityDot = ({ size, withTooltip, hrefAnchor }: Props) => {
   };
 
   const dotSizeClass = size === "large" ? "w-5 h-5" : "w-2.5 h-2.5";
-  const pingClass = size === "large" ? "w-5 h-5" : "w-2.5 h-2.5";
+  // const pingClass = size === "large" ? "w-5 h-5" : "w-2.5 h-2.5";
 
   const dot = (
     <div className="relative flex items-center justify-center cursor-pointer" onClick={handleClick}>
