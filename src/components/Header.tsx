@@ -11,7 +11,6 @@ import {
   FolderOpen,
   // Download,
 } from "lucide-react";
-import AvailabilityDot from "@/components/AvailabilityDot";
 
 const Header = () => {
   const t = useTranslations();
@@ -171,16 +170,6 @@ const Header = () => {
               </a>
             </li>
           </ul>
-
-          <div className="hidden lg:flex items-center gap-2 mr-3">
-            <AvailabilityDot size="small" withTooltip={false} hrefAnchor="#biography" />
-            <span
-              className="hidden xl:block text-green-400 text-xs italic cursor-pointer hover:text-green-300 transition-colors duration-200"
-              onClick={() => document.querySelector("#biography")?.scrollIntoView({ behavior: "smooth" })}
-            >
-              {t("availability.short")}
-            </span>
-          </div>
 
           <div className="mr-2">
             <a

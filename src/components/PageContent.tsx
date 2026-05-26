@@ -24,14 +24,15 @@ export default function PageContent({
   initialLocale,
   initialMessages,
 }: PageContentProps) {
-  const [locale, setLocale] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("locale") || initialLocale;
-    }
-    return initialLocale;
-  });
+  const [locale, setLocale] = useState(initialLocale);
   const [messages, setMessages] =
     useState<AbstractIntlMessages>(initialMessages);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("locale");
+    if (saved === "fr") setLocale("fr");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     document.documentElement.lang = locale;
@@ -42,8 +43,11 @@ export default function PageContent({
     if (locale === initialLocale) return;
     async function loadMessages() {
       try {
-        const msgs = await import(`../../public/locales/${locale}.json`);
-        setMessages(msgs.default);
+        const mod =
+          locale === "fr"
+            ? await import("../../public/locales/fr.json")
+            : await import("../../public/locales/en.json");
+        setMessages(mod.default as AbstractIntlMessages);
       } catch (error) {
         console.error("Erreur lors du chargement des messages:", error);
       }
